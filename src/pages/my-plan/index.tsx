@@ -1,4 +1,4 @@
-function MyPlan() {
+function MyPlanPage() {
   return <div>:)</div>;
 }
-export default MyPlan;
+export default MyPlanPage;

@@ -1,4 +1,4 @@
-function RoomList() {
+function RoomListPage() {
   return <div>:)</div>;
 }
-export default RoomList;
+export default RoomListPage;

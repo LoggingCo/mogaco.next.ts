@@ -1,4 +1,4 @@
-function MogacoRoom() {
+function RoomPage() {
   return <div>:)</div>;
 }
-export default MogacoRoom;
+export default RoomPage;
