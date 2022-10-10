@@ -18,7 +18,9 @@ function SideMyInfo() {
           <Styled.Name>
             안녕하세요? <span>🐣 {userInfo.name}</span>님
             <Link href={'/my-plan'}>
-              <p>내 학습 플래너</p>
+              <a>
+                <p>내 학습 플래너</p>
+              </a>
             </Link>
           </Styled.Name>
           <Styled.Info>

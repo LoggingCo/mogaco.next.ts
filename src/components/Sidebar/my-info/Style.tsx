@@ -26,7 +26,7 @@ export const Name = styled.div`
     cursor: pointer;
   }
 
-  & > p {
+  & > a > p {
     font-size: ${({ theme }) => theme.fontSize.small};
     margin-top: 16px;
     text-align: right;

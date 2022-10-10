@@ -8,9 +8,9 @@ import SideWeeklyRank from './weekly-rank/Weelky';
 function Sidebar() {
   return (
     <Wrapper>
-      <SideSiginIn />
-      {/* <SideMyInfo />
-      <SideMyMogaco /> */}
+      {/* <SideSiginIn /> */}
+      <SideMyInfo />
+      <SideMyMogaco />
       <SideMonthlyRank />
       <SideWeeklyRank />
     </Wrapper>
@@ -20,12 +20,12 @@ export default Sidebar;
 
 const Wrapper = styled.div`
   min-width: 330px;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 300px);
   overflow: scroll;
   position: sticky;
   align-self: flex-start;
   border-radius: 0 18px 0 0;
-  top: 150px;
+  top: 290px;
   left: 0;
 
   ::-webkit-scrollbar {

@@ -12,6 +12,11 @@ export const BlackBackGround = styled.div`
   z-index: 100;
 `;
 
+// layout container
+export const LayoutContainer = styled.div`
+  display: flex;
+`;
+
 // align
 
 export const absoluteCenter = css`

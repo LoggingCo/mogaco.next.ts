@@ -4,7 +4,6 @@ import GlobalStyles from '../styles/globals';
 import theme from '../styles/theme';
 import { ReactNode } from 'react';
 import { useRouter } from 'next/router';
-import Layout from '../components/Layout/Layout';
 
 function MyApp({ Component, pageProps }: any) {
   const getLayout = Component.getLayout || ((page: ReactNode) => page);
@@ -13,11 +12,7 @@ function MyApp({ Component, pageProps }: any) {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      {route.pathname === '/' ? (
-        <Component {...pageProps} />
-      ) : (
-        <Layout>{getLayout(<Component {...pageProps} />)}</Layout>
-      )}
+      {getLayout(<Component {...pageProps} />)}
     </ThemeProvider>
   );
 }

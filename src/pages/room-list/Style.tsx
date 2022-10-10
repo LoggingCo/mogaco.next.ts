@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { flexCenter } from '../../styles/common';
 
 export const Wrapper = styled.div`
   width: 100%;

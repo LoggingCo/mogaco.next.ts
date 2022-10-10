@@ -38,7 +38,6 @@ const Home: NextPage = () => {
     </Wrapper>
   );
 };
-
 export default Home;
 
 const Wrapper = styled.div`
