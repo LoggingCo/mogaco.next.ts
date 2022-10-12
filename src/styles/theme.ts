@@ -1,23 +1,32 @@
 import { DefaultTheme } from 'styled-components';
 
 const palette = {
-  // Primary
-  mainColor: '#091E3B',
-  subColor: '#FFFFFF',
-  background: '#E6F1F0',
-  fontColor: '#505050',
-  fontSubColor: '#999999',
+  primary: {
+    100: '#BFDEEE',
+    200: '#9DCDE7',
+    300: '#3AA5DD',
+  },
+  subColor: '#EBF1F4',
+  fontColor: '#222222',
+  fontSubColor: '#ffffff',
   error: '#EB5757',
   subError: '#FFBA52',
+  gray: {
+    100: '#e9e9e9',
+    200: '#D9D9D9',
+    300: '#656565',
+  },
+  yellow: '#FFE381',
+  puple: '#EDC4FC',
+  sky: '#A4EEFF',
 } as const;
 
 const fontSize = {
-  small: '12px',
-  medium: '14px',
-  large: '16px',
+  small: '14px',
+  medium: '16px',
+  large: '18px',
   xLarge: '24px',
-  xxLarge: '28px',
-  xxxLarge: '32px',
+  xxLarge: '32px',
 } as const;
 
 const fontWeight = {

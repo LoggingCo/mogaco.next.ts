@@ -1,6 +1,6 @@
 const mediaQuery = (maxWidth: number) => `@media (max-width: ${maxWidth}px)`;
 
-export const size = {
+const size = {
   mobileS: 375,
   mobileM: 568,
   mobileL: 768,
@@ -10,7 +10,7 @@ export const size = {
   desktopL: 1920,
 };
 
-const { mobileS, mobileM, mobileL, tablet, desktopS, desktopM, desktopL } = size;
+export const { mobileS, mobileM, mobileL, tablet, desktopS, desktopM, desktopL } = size;
 
 export const media = {
   mobileS: mediaQuery(mobileS),
