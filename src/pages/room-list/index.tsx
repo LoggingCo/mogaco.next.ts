@@ -1,3 +1,5 @@
+import FullLayout from 'components/Layout/FullLayout';
+import { ReactElement } from 'react';
 import RoomCardList from './components/List/List';
 import RoomListSearch from './components/Search/Search';
 import * as Styled from './Style';
@@ -17,4 +19,9 @@ function RoomListPage() {
     </>
   );
 }
+
+RoomListPage.getLayout = function getLayout(page: ReactElement) {
+  return <FullLayout>{page}</FullLayout>;
+};
+
 export default RoomListPage;

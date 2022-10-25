@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';
 import SideMyInfo from './my-info/Myinfo';
 import SideMyMogaco from './my-mogaco/Mymogaco';
-import SideSiginIn from './sign-in/Signin';
 import SideWeeklyRank from './weekly-rank/Weelky';
 
 function Sidebar() {
