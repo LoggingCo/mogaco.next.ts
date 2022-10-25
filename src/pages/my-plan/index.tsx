@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import Layout from 'components/Layout/Layout';
 import { ReactElement } from 'react';
 import MyPlanCalendar from './components/Calendar/Calendar';
@@ -18,9 +17,3 @@ MyPlanPage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 export default MyPlanPage;
-=======
-function MyPlan() {
-  return <div>:)</div>;
-}
-export default MyPlan;
->>>>>>> 54f654b (init)
