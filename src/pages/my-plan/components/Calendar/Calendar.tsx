@@ -1,56 +1,21 @@
-import dayjs, { Dayjs } from 'dayjs';
+import dayjs from 'dayjs';
 import { myplanData } from 'libs/mock/myplan.data';
+import { useCalendar } from 'pages/my-plan/hooks/useCalendar';
 import { useEffect, useState } from 'react';
 import * as Styled from './Style';
 
 dayjs.locale('ko');
-function MyPlanCalendar() {
-  const [date, setDate] = useState<Dayjs>(dayjs());
-  const [selectMonth, setSelectMonth] = useState<number | null>(null);
+function MyPlanCalendar({ date }: any) {
   const [selectDate, setSelectDate] = useState<number | null>(null);
-
-  const [dateElement, setDateElement] = useState<any>([]);
   const [dailyhours, setDailyhours] = useState<any>(myplanData);
-
-  useEffect(() => {
-    if (!date) return;
-    setSelectMonth(date.month());
-  }, [date]);
-
-  useEffect(() => {
-    if (!date) return;
-    const firstDate = date.startOf('month'); // 1
-    const lastDate = date.endOf('month'); // 30~31
-    const selectMonthDateInfo = [];
-
-    for (let i = 0; i < lastDate.date(); i++) {
-      const date = firstDate.add(i, 'day');
-      selectMonthDateInfo.push({
-        date: date.date(),
-        day: date.day(),
-        isToday: date.isSame(dayjs(), 'day'),
-      });
-    }
-
-    if (firstDate.day() !== 0) {
-      const lastMonthDate = firstDate.subtract(1, 'month');
-      for (let i = 0; i < firstDate.day(); i++) {
-        selectMonthDateInfo.unshift({
-          date: lastMonthDate.endOf('month').subtract(i, 'day').date(),
-          day: lastMonthDate.endOf('month').subtract(i, 'day').day(),
-          isMonth: false,
-        });
-      }
-    }
-    setDateElement(selectMonthDateInfo);
-  }, [selectMonth]);
+  const [dateElement] = useCalendar(date);
 
   return (
     <Styled.Wrapper>
-      <Styled.Header></Styled.Header>
+      <Styled.Header>PLANNER</Styled.Header>
       <Styled.Container>
         {dateElement.map((date: any) => (
-          <Styled.Date key={date.date}>
+          <Styled.Date key={date.date} isToday={date.isToday} isMonth={date.isMonth}>
             {date.date}
             {dailyhours.map((dailyhour: any) => (
               <div key={dailyhour.date}>
