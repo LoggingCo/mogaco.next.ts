@@ -8,7 +8,7 @@ dayjs.locale('ko');
 function MyPlanCalendar({ date }: any) {
   const [selectDate, setSelectDate] = useState<number | null>(null);
   const [dailyhours, setDailyhours] = useState<any>(myplanData);
-  const [dateElement] = useCalendar(date);
+  const [dateElement, setDateElement] = useCalendar(date);
 
   return (
     <Styled.Wrapper>

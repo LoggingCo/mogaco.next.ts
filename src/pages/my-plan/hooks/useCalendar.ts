@@ -1,5 +1,5 @@
 import dayjs, { Dayjs } from 'dayjs';
-import { useEffect, useState } from 'react';
+import { Dispatch, SetStateAction, useEffect, useState } from 'react';
 
 type DateElement = {
   date: number;
@@ -8,7 +8,9 @@ type DateElement = {
   isToday?: boolean;
 };
 
-export const useCalendar = (date: Dayjs) => {
+type useCalendarType = [DateElement[], Dispatch<SetStateAction<DateElement[]>>];
+
+export const useCalendar = (date: Dayjs): useCalendarType => {
   dayjs.locale('ko');
   const [dateElement, setDateElement] = useState<Array<DateElement>>([]);
 
@@ -40,5 +42,6 @@ export const useCalendar = (date: Dayjs) => {
     }
     setDateElement(selectMonthDateInfo);
   }, [date]);
+
   return [dateElement, setDateElement];
 };
