@@ -10,7 +10,7 @@ type DateElement = {
 
 export const useCalendar = (date: Dayjs) => {
   dayjs.locale('ko');
-  const [dateElement, setDateElement] = useState<DateElement[]>([]);
+  const [dateElement, setDateElement] = useState<Array<DateElement>>([]);
 
   useEffect(() => {
     if (!date) return;
