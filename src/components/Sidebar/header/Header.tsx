@@ -6,12 +6,12 @@ type SideHeaderProps = {
   title: string;
   style?: CSSProperties;
   active?: boolean;
-  setActive?: Dispatch<SetStateAction<boolean>>;
+  setActive?: Dispatch<SetStateAction<boolean>> | undefined;
 };
 
 function SideHeader({ title, style, active, setActive }: SideHeaderProps) {
   const onToggleActive = () => {
-    setActive((prev) => !prev);
+    setActive && setActive((prev) => !prev);
   };
 
   return (

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 360px;
-  height: 680px;
+  max-height: 680px;
   position: sticky;
   top: 100px;
   margin-right: 32px;
@@ -30,6 +30,5 @@ export const Header = styled.div`
 `;
 
 export const Container = styled.div`
-  border: 1px solid ${({ theme }) => theme.palette.gray[300]};
   height: 100%;
 `;

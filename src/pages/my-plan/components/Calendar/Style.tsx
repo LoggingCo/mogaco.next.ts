@@ -15,6 +15,7 @@ export const Container = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  border: 1px solid ${({ theme }) => theme.palette.primary[300]};
 `;
 
 export const Date = styled.div<CalenderStyleProps>`

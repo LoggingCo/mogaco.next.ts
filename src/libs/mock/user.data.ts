@@ -1,6 +1,10 @@
 export const userData = [];
 export const userPlanData = {
-  name: '병아리개발자',
+  user: {
+    name: '병아리개발자',
+    level: 2,
+  },
+
   time: {
     Monthly: '13h 27m 56s',
     Weekly: '3h 27m 56s',
