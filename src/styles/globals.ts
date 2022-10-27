@@ -16,6 +16,11 @@ const GlobalStyles = createGlobalStyle`
       background-color: #EBF1F4;
     }
 
+    body,
+    html {
+      font-family: 'AppleSDGothicNeoM', sans-serif;
+    }
+
     ol,
     ul,
     li {

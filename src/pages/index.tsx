@@ -71,6 +71,7 @@ const Container = styled.div`
   flex-direction: column;
   color: ${({ theme }) => theme.palette.fontSubColor};
   font-weight: ${({ theme }) => theme.fontWeight.bold};
+  line-height: 1.2;
   font-size: 100px;
 
   & .Typist {

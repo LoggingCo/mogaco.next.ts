@@ -22,7 +22,3 @@
   font-family: 'AppleSDGothicNeoEB';
   src: url('/fonts/AppleSDGothicNeoEB.ttf') format('truetype');
 }
-
-body {
-  font-family: AppleSDGothicNeoM, arial, sans-serif;
-}
