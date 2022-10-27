@@ -1,4 +1,3 @@
-import useSideOpen from 'hooks/useSideOpen';
 import { useRouter } from 'next/router';
 import * as Styled from './Style';
 

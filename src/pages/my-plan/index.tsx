@@ -1,9 +1,9 @@
 import Layout from 'components/Layout/Layout';
+import MyPlanCalendar from 'components/Pages/my-plan/Calendar/Calendar';
+import MyPlanSidebar from 'components/Pages/my-plan/Sidebar/Sidebar';
 import dayjs, { Dayjs } from 'dayjs';
 import { ReactElement, useState } from 'react';
-import MyPlanCalendar from './components/Calendar/Calendar';
-import MyPlanSidebar from './components/Sidebar/Sidebar';
-import * as Styled from './Style';
+import styled from 'styled-components';
 
 dayjs.locale('ko');
 function MyPlanPage() {
@@ -22,3 +22,16 @@ MyPlanPage.getLayout = function getLayout(page: ReactElement) {
 };
 
 export default MyPlanPage;
+
+const Wrapper = styled.div`
+  width: 100%;
+  min-height: calc(100vh - 60px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+`;
+
+const Styled = {
+  Wrapper,
+};

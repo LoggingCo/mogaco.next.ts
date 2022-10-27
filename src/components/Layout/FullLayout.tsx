@@ -1,4 +1,4 @@
-import Sidebar from '../Sidebar';
+import Sidebar from './Sidebar';
 import * as Styled from './Style';
 
 function FullLayout({ children }: any) {
