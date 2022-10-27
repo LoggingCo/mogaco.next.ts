@@ -4,6 +4,7 @@ import { flexAlignCenter } from 'styles/common';
 type CalenderStyleProps = {
   isMonth: boolean;
   isToday: boolean;
+  day: number;
 };
 
 export const Wrapper = styled.div`
@@ -19,9 +20,11 @@ export const Container = styled.div`
 export const Date = styled.div<CalenderStyleProps>`
   width: 155px;
   height: 155px;
+  padding: 0.5rem;
   border: 1px dotted #d3d3d3;
-  ${({ isMonth }) => !isMonth && `color: #d3d3d3;`}
   ${({ isToday }) => isToday && `border: 1px solid #f00;`}
+  ${({ day }) => (day === 0 ? `color: #f00;` : day === 6 && `color: #0000ff;`)}
+  ${({ isMonth }) => !isMonth && `color: #d3d3d3;`}
   cursor: pointer;
   position: relative;
   display: flex;
@@ -35,6 +38,8 @@ export const Date = styled.div<CalenderStyleProps>`
 `;
 
 export const DateContainer = styled.div`
+  color: ${({ theme }) => theme.palette.fontColor};
+  font-size: 0.825rem;
   & > p {
     padding: 0.2rem 1rem;
     font-weight: ${({ theme }) => theme.fontWeight.bold};

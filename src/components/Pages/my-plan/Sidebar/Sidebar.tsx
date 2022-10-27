@@ -39,7 +39,7 @@ export default MyPlanSidebar;
 
 const Wrapper = styled.div`
   width: 360px;
-  max-height: 680px;
+  max-height: 720px;
   position: sticky;
   top: 100px;
   margin-right: 32px;

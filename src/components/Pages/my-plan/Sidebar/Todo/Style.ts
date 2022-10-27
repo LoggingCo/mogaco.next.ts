@@ -25,6 +25,8 @@ export const Header = styled.div`
 export const Content = styled.div`
   padding: 1rem;
   border: 1px solid ${({ theme }) => theme.palette.primary[300]};
+  max-height: 15rem;
+  overflow-y: auto;
 
   & li {
     margin: 1rem 0;
@@ -58,5 +60,28 @@ export const TodoList = styled.span<TodoStyledType>`
   :hover {
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     transform: scale(1.1);
+  }
+`;
+
+export const TodoForm = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  & > input {
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+  }
+
+  & > button {
+    background-color: ${({ theme }) => theme.palette.primary[300]};
+    color: #fff;
+    font-size: ${({ theme }) => theme.fontSize.small};
+
+    width: 40px;
+    height: 40px;
   }
 `;

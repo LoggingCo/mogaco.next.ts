@@ -32,7 +32,7 @@ export const useCalendar = (date: Dayjs): useCalendarType => {
 
     if (firstDate.day() !== 0) {
       const lastMonthDate = date.subtract(1, 'month');
-      for (let i = 1; i <= firstDate.day(); i++) {
+      for (let i = 0; i < firstDate.day(); i++) {
         selectMonthDateInfo.unshift({
           date: lastMonthDate.endOf('month').subtract(i, 'day').date(),
           day: lastMonthDate.endOf('month').subtract(i, 'day').day(),
