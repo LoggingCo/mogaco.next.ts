@@ -10,6 +10,8 @@ function MyPlanCalendar({ date }: any) {
   const [dailyhours, setDailyhours] = useState<any>(myplanData);
   const [dateElement, setDateElement] = useCalendar(date);
 
+  console.log(dailyhours);
+
   return (
     <Styled.Wrapper>
       <Styled.Header>PLANNER</Styled.Header>
@@ -17,17 +19,15 @@ function MyPlanCalendar({ date }: any) {
         {dateElement.map((date: any, index: number) => (
           <Styled.Date key={index} isToday={date.isToday} isMonth={date.isMonth}>
             {date.date}
-            {dailyhours.map((dailyhour: any) => (
-              <div key={dailyhour.date}>
-                {dailyhour.date === date.date &&
-                  dailyhour.mogaco.map((mogaco: any) => (
-                    <div key={mogaco.name}>
-                      <p>{mogaco.name}</p>
-                      <p>{mogaco.time}</p>
-                    </div>
-                  ))}
-              </div>
-            ))}
+            {dailyhours.length > 0 && (
+              <Styled.DateContainer>
+                {dailyhours.map(
+                  (daily: any) =>
+                    daily.date === date.date &&
+                    daily.mogaco.map((mogaco: any) => <p>{mogaco.time}</p>),
+                )}
+              </Styled.DateContainer>
+            )}
           </Styled.Date>
         ))}
       </Styled.Container>

@@ -22,6 +22,34 @@ export const Date = styled.div<CalenderStyleProps>`
   border: 1px dotted #d3d3d3;
   ${({ isMonth }) => !isMonth && `color: #d3d3d3;`}
   ${({ isToday }) => isToday && `border: 1px solid #f00;`}
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+
+  :hover {
+    background-color: #d3d3d3;
+  }
+`;
+
+export const DateContainer = styled.div`
+  & > p {
+    padding: 0.2rem 1rem;
+    font-weight: ${({ theme }) => theme.fontWeight.bold};
+  }
+  & > p:first-child {
+    background-color: ${({ theme }) => theme.palette.yellow};
+  }
+
+  & > p:nth-of-type(2) {
+    background-color: ${({ theme }) => theme.palette.puple};
+  }
+
+  & > p:last-child {
+    background-color: ${({ theme }) => theme.palette.sky};
+  }
 `;
 
 export const Header = styled.div`
