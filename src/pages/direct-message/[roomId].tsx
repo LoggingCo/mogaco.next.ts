@@ -1,4 +1,3 @@
-import { Head } from 'next/document';
 import { useRouter } from 'next/router';
 
 function DirectMessagePage() {

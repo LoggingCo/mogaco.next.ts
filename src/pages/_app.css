@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'AppleSDGothicNeoH';
+  src: url('/fonts/AppleSDGothicNeoH.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoL';
+  src: url('/fonts/AppleSDGothicNeoL.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoM';
+  src: url('/fonts/AppleSDGothicNeoM.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoB';
+  src: url('/fonts/AppleSDGothicNeoB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'AppleSDGothicNeoEB';
+  src: url('/fonts/AppleSDGothicNeoEB.ttf') format('truetype');
+}

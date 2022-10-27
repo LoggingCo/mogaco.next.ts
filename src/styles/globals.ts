@@ -5,6 +5,7 @@ const GlobalStyles = createGlobalStyle`
   ${reset}
     * {
       box-sizing:border-box;  
+      font-family: 'AppleSDGothicNeoL';
     }
 
     html {
