@@ -8,7 +8,6 @@ type CalenderStyleProps = {
 
 export const Wrapper = styled.div`
   max-width: 1440px;
-  max-height: 680px;
 `;
 
 export const Container = styled.div`
