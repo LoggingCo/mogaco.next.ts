@@ -30,7 +30,7 @@ export const Date = styled.div<CalenderStyleProps>`
   padding-bottom: 2rem;
 
   :hover {
-    background-color: #d3d3d3;
+    ${({ isMonth, theme }) => isMonth && `background-color: ${theme.palette.primary[100]};`}
   }
 `;
 
