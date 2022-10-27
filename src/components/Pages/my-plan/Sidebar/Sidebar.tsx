@@ -1,20 +1,31 @@
 import { userPlanData } from 'libs/mock/user.data';
 import { useState } from 'react';
 import { parseMonth } from 'utils/parseMonth';
-import MyPlanSideInfo from './Info/SideInfo';
-import MyPlanSideMogaco from './Mogaco/SideInfo';
-import MyPlanSideTodo from './Todo/SideInfo';
+import MyPlanSideInfo from './Info/Info';
+import MyPlanSideMogaco from './Mogaco/Mogaco';
+import MyPlanSideTodo from './Todo/Todo';
 import styled from 'styled-components';
 
 function MyPlanSidebar({ date, setDate }: any) {
   const [myinfo, setMyinfo] = useState<any>(userPlanData);
 
+  const onPrevMonth = () => {
+    const newDate = date.subtract(1, 'month');
+    setDate(newDate);
+  };
+
+  const onNextMonth = () => {
+    const newDate = date.add(1, 'month');
+    setDate(newDate);
+  };
+
   return (
     <Styled.Wrapper>
+      <p>{date.year()}</p>
       <Styled.Header>
-        <button>{'<'}</button>
+        <button onClick={onPrevMonth}>{'<'}</button>
         <p>{parseMonth(date.month())}</p>
-        <button>{'>'}</button>
+        <button onClick={onNextMonth}>{'>'}</button>
       </Styled.Header>
       <Styled.Container>
         <MyPlanSideInfo info={{ user: myinfo.user, time: myinfo.time }} />

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import * as Styled from './Style';
 
@@ -7,7 +8,11 @@ function Layout({ children }: any) {
   return (
     <>
       <Styled.Header>
-        <Styled.Logo>Mogaco</Styled.Logo>
+        <Link href="/">
+          <a>
+            <Styled.Logo>Mogaco</Styled.Logo>
+          </a>
+        </Link>
       </Styled.Header>
       {children}
     </>

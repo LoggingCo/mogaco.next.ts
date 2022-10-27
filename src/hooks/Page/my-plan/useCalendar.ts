@@ -10,7 +10,7 @@ type DateElement = {
 
 type useCalendarType = [DateElement[], Dispatch<SetStateAction<DateElement[]>>];
 
-const useCalendar = (date: Dayjs): useCalendarType => {
+export const useCalendar = (date: Dayjs): useCalendarType => {
   dayjs.locale('ko');
   const [dateElement, setDateElement] = useState<Array<DateElement>>([]);
 
@@ -31,8 +31,8 @@ const useCalendar = (date: Dayjs): useCalendarType => {
     }
 
     if (firstDate.day() !== 0) {
-      const lastMonthDate = firstDate.subtract(1, 'month');
-      for (let i = 0; i < firstDate.day(); i++) {
+      const lastMonthDate = date.subtract(1, 'month');
+      for (let i = 1; i <= firstDate.day(); i++) {
         selectMonthDateInfo.unshift({
           date: lastMonthDate.endOf('month').subtract(i, 'day').date(),
           day: lastMonthDate.endOf('month').subtract(i, 'day').day(),

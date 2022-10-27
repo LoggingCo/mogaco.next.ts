@@ -90,7 +90,8 @@ const Container = styled.div`
     background-color: #fff;
     color: ${({ theme }) => theme.palette.primary[300]};
     font-size: ${({ theme }) => theme.fontSize.xxLarge};
-    padding: 8px 16px;
+    padding: 0 32px 12px 32px;
+    margin-top: 16px;
     border-radius: 16px;
 
     :hover {

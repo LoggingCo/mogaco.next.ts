@@ -11,7 +11,7 @@ function MyPlanPage() {
 
   return (
     <Styled.Wrapper>
-      <MyPlanSidebar date={date} setData={setDate} />
+      <MyPlanSidebar date={date} setDate={setDate} />
       <MyPlanCalendar date={date} />
     </Styled.Wrapper>
   );

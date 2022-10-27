@@ -30,12 +30,6 @@ export const Mogaco = styled.ul`
     }
   }
 
-  & li:first-child {
-    & > p > span {
-      background-color: ${({ theme }) => theme.palette.yellow};
-    }
-  }
-
   & li:nth-of-type(2) {
     & > p > span {
       background-color: ${({ theme }) => theme.palette.puple};

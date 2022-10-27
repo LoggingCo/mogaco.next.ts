@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { myplanData } from 'libs/mock/myplan.data';
-import useCalendar from 'hooks/Page/my-plan/useCalendar';
+import { useCalendar } from 'hooks/Page/my-plan/useCalendar';
 import { useState } from 'react';
 import * as Styled from './Style';
 
@@ -14,8 +14,8 @@ function MyPlanCalendar({ date }: any) {
     <Styled.Wrapper>
       <Styled.Header>PLANNER</Styled.Header>
       <Styled.Container>
-        {dateElement.map((date: any) => (
-          <Styled.Date key={date.date} isToday={date.isToday} isMonth={date.isMonth}>
+        {dateElement.map((date: any, index: number) => (
+          <Styled.Date key={index} isToday={date.isToday} isMonth={date.isMonth}>
             {date.date}
             {dailyhours.map((dailyhour: any) => (
               <div key={dailyhour.date}>

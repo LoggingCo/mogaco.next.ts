@@ -30,18 +30,28 @@ export const userPlanData = {
   ],
   todo: [
     {
+      id: 1,
+      state: true,
       todo: '토이 프로젝트',
     },
     {
+      id: 1,
+      state: false,
       todo: 'proj design 회의',
     },
     {
+      id: 1,
+      state: true,
       todo: 'apple codding 복습',
     },
     {
+      id: 1,
+      state: false,
       todo: '교재 구입',
     },
     {
+      id: 1,
+      state: true,
       todo: 'proj03 refectoring',
     },
   ],

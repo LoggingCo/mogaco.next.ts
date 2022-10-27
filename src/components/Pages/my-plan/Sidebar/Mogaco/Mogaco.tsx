@@ -5,14 +5,16 @@ function MyPlanSideMogaco({ mogaco }: any) {
     <>
       <Styled.Header>mogaco List</Styled.Header>
       <Styled.Content>
-        <ul>
+        <Styled.MogacoList>
           {mogaco.map((mogaco: any) => (
             <li key={mogaco.id}>
-              <p>{mogaco.name}</p>
-              <p>{mogaco.time}</p>
+              <p>
+                <span></span> {mogaco.name}
+              </p>
+              <Styled.MogaoTime>{mogaco.time}</Styled.MogaoTime>
             </li>
           ))}
-        </ul>
+        </Styled.MogacoList>
       </Styled.Content>
     </>
   );
