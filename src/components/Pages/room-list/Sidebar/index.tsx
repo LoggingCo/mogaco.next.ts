@@ -4,9 +4,10 @@ import SideMyInfo from './my-info/Myinfo';
 import SideMyMogaco from './my-mogaco/Mymogaco';
 import SideWeeklyRank from './weekly-rank/Weelky';
 
-function Sidebar() {
+function RoomListSidebar() {
   return (
     <Wrapper>
+      <p>🔥</p>
       {/* <SideSiginIn /> */}
       <SideMyInfo />
       <SideMyMogaco />
@@ -15,16 +16,16 @@ function Sidebar() {
     </Wrapper>
   );
 }
-export default Sidebar;
+export default RoomListSidebar;
 
 const Wrapper = styled.div`
   min-width: 330px;
-  height: calc(100vh - 300px);
+  height: 100vh;
   overflow: scroll;
   position: sticky;
   align-self: flex-start;
   border-radius: 0 18px 0 0;
-  top: 290px;
+  top: 0;
   left: 0;
 
   ::-webkit-scrollbar {

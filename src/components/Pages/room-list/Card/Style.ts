@@ -9,10 +9,9 @@ type CardStyledType = {
 // card styled
 export const Wrapper = styled.div<CardStyledType>`
   margin: 16px;
-  width: 370px;
-  height: 320px;
+  width: 47%;
+  height: 200px;
   transition: all 0.5s ease-in-out;
-  /* transform: ${({ filp }) => (filp ? 'rotateY(180deg)' : 'rotateY(0deg)')}; */
   border-radius: 16px;
   box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.1);
 `;
