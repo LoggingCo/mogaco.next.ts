@@ -1,4 +1,34 @@
+import { PoPularCategoryhData } from 'libs/mock/search.data';
+import { useState } from 'react';
+import * as Styled from './Style';
+
 function SidebarSearch() {
-  return <div></div>;
+  const [PopularCate, setPopularCate] = useState(PoPularCategoryhData);
+  const [selectedCate, setSelectedCate] = useState(['개발', '취미']);
+
+  return (
+    <Styled.Wrapper>
+      <h1>🔥 인기 카테고리</h1>
+      <Styled.List>
+        {PopularCate.map((cate: any) => (
+          <Styled.Item key={cate.id}>
+            <span>{cate}</span>
+          </Styled.Item>
+        ))}
+      </Styled.List>
+      <Styled.Form>
+        <input type="text" placeholder="검색어를 입력해주세요" />
+        <button>검색</button>
+      </Styled.Form>
+      <Styled.Categroy>
+        {selectedCate.map((cate: string) => (
+          <span key={cate}>
+            {cate}
+            <button>x</button>
+          </span>
+        ))}
+      </Styled.Categroy>
+    </Styled.Wrapper>
+  );
 }
 export default SidebarSearch;

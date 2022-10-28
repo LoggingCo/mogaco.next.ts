@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';
 import SideMyInfo from './my-info/Myinfo';
 import SideMyMogaco from './my-mogaco/Mymogaco';
+import SidebarSearch from './Search/Search';
 import SideWeeklyRank from './weekly-rank/Weelky';
 
 function RoomListSidebar() {
   return (
     <Wrapper>
-      <p>🔥</p>
+      <SidebarSearch />
       {/* <SideSiginIn /> */}
       <SideMyInfo />
       <SideMyMogaco />
