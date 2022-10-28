@@ -30,6 +30,7 @@ const Container = styled.div`
 
 const Content = styled.div`
   width: 1440px;
+  padding-top: 1rem;
   margin: 0 auto;
   overflow-y: scroll;
   ::-webkit-scrollbar {

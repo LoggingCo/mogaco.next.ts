@@ -59,7 +59,7 @@ export const InputBox = styled.div`
     padding: 0 1rem;
     border: 1px solid ${({ theme }) => theme.palette.primary[300]};
     border-radius: 8px;
-    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-size: ${({ theme }) => theme.fontSize.small};
     margin-bottom: 0.3rem;
   }
 `;

@@ -4,7 +4,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -18,7 +18,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -32,7 +32,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -46,7 +46,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -60,7 +60,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -74,7 +74,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -88,7 +88,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -102,7 +102,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗 리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -116,7 +116,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -130,7 +130,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -144,7 +144,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -158,7 +158,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -172,7 +172,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -186,7 +186,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -200,7 +200,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -214,7 +214,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -228,7 +228,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -242,7 +242,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗 리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -256,7 +256,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',
@@ -270,7 +270,7 @@ export const RoomListData = [
     title: '모여라ㅏㅏㅏ친구들',
     description:
       '환영합니다! 우리는 날때부터 개발자 ㅋ는 아니고 같이 꾸준히 코딩하면서 실력쌓을 분들을 기다립니다 🤗',
-    category: '개발',
+    category: ['개발', '취미'],
     maxMember: 5,
     currentMember: 3,
     startDate: '2021-08-01',

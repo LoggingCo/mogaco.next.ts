@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import RoomCard from '../Card/Card';
+import RoomCard from './Card/Card';
 import SkeletonCard from '../SkeletonCard/Skelton';
 import { RoomListData } from 'libs/mock/roomList.data';
 import * as Styled from './Style';
