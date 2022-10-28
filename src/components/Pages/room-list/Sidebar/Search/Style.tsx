@@ -56,6 +56,11 @@ export const Categroy = styled.div`
     padding: 0.3rem;
     background-color: ${({ theme }) => theme.palette.gray[300]};
     color: ${({ theme }) => theme.palette.fontSubColor};
+    cursor: pointer;
+
+    :hover {
+      opacity: 0.8;
+    }
   }
 
   & button {
