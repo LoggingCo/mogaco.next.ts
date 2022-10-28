@@ -3,14 +3,15 @@ import SideMonthlyRank from './monthly-rank/Montly';
 import SideMyInfo from './my-info/Myinfo';
 import SideMyMogaco from './my-mogaco/Mymogaco';
 import SidebarSearch from './Search/Search';
+import SideSiginIn from './sign-in/Signin';
 import SideWeeklyRank from './weekly-rank/Weelky';
 
 function RoomListSidebar() {
   return (
     <Wrapper>
       <SidebarSearch />
-      {/* <SideSiginIn /> */}
-      <SideMyInfo />
+      <SideSiginIn />
+      {/* <SideMyInfo /> */}
       <SideMyMogaco />
       <SideMonthlyRank />
       <SideWeeklyRank />

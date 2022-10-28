@@ -6,23 +6,15 @@ export const Container = styled.div`
   ${flexCenter}
   flex-direction: column;
   border: 1px solid ${({ theme }) => theme.palette.primary[300]};
-`;
 
-export const Input = styled.input`
-  width: 80%;
-  background-color: #fff;
-  margin: 4px 0;
-  height: 40px;
-  padding-left: 16px;
-`;
+  & button {
+    width: 90%;
+    height: 48px;
+    background-color: ${({ theme }) => theme.palette.primary[200]};
+    color: ${({ theme }) => theme.palette.fontSubColor};
 
-export const ButtonGroup = styled.div`
-  width: 80%;
-  text-align: right;
-  font-size: 10px;
-  margin-top: 8px;
-
-  & > button {
-    margin: 0 5px;
+    :hover {
+      background-color: ${({ theme }) => theme.palette.primary[300]};
+    }
   }
 `;
