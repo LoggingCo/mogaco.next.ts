@@ -1,29 +1,39 @@
-import { LegacyRef, useCallback, useRef } from 'react';
-import { BlackBackGround } from 'styles/common';
+import { useCallback, useEffect, useRef } from 'react';
 import * as Styled from './Style';
 import dayjs from 'dayjs';
 
 dayjs.locale('ko');
-function MyPlanMemoModal({ selectDate, setIsOpenMemoModal }: any) {
+function MyPlanMemoModal({ selectDate, isOpenMemoModal, setIsOpenMemoModal }: any) {
   const textRef = useRef<HTMLTextAreaElement>(null);
-  const handleResizeHeight = useCallback(() => {
-    if (!textRef.current) return;
-    textRef.current.style.height = textRef.current.scrollHeight + 'px';
-  }, []);
+  const MemoRef = useRef<HTMLDivElement>(null);
 
-  const onCloseMemoModal = () => {
-    setIsOpenMemoModal(false);
+  const TransFormMemoModal = () => {
+    setTimeout(() => {
+      MemoRef.current!.style.transform = 'translateX(0)';
+    }, 100);
   };
 
+  const onCloseMemoModal = () => {
+    MemoRef.current!.style.transform = 'translateX(100%)';
+    setTimeout(() => {
+      setIsOpenMemoModal(false);
+    }, 1000);
+  };
+
+  useEffect(() => {
+    if (!isOpenMemoModal) return;
+    TransFormMemoModal();
+  }, [isOpenMemoModal]);
+
   return (
-    <BlackBackGround>
-      <Styled.Modal>
+    <>
+      <Styled.Modal isModal={isOpenMemoModal} ref={MemoRef}>
         <Styled.Header>
-          <span>메모</span>
-          <button onClick={onCloseMemoModal}>x</button>
+          <span>MEMO</span>
+          <button onClick={onCloseMemoModal}>{'>'}</button>
         </Styled.Header>
         <Styled.Date>
-          <span>{`${selectDate.year}. ${selectDate.month + 1}. ${selectDate.date}`}</span>
+          <span>{`${selectDate?.year}. ${selectDate?.month + 1}. ${selectDate?.date}`}</span>
         </Styled.Date>
         <Styled.TitleBox>
           <p>
@@ -34,10 +44,11 @@ function MyPlanMemoModal({ selectDate, setIsOpenMemoModal }: any) {
           </p>
         </Styled.TitleBox>
         <Styled.Content>
-          <textarea placeholder="내용을 입력해주세요" ref={textRef} onInput={handleResizeHeight} />
+          <textarea placeholder="내용을 입력해주세요" ref={textRef} />
         </Styled.Content>
+        <button>저장</button>
       </Styled.Modal>
-    </BlackBackGround>
+    </>
   );
 }
 export default MyPlanMemoModal;

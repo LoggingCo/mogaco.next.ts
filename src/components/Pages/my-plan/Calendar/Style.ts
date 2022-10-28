@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { flexAlignCenter } from 'styles/common';
+import { media } from 'styles/media';
 
 type CalenderStyleProps = {
   isMonth: boolean;
@@ -9,6 +10,10 @@ type CalenderStyleProps = {
 
 export const Wrapper = styled.div`
   max-width: 1440px;
+
+  ${media.custom(1680)} {
+    max-width: 980px;
+  }
 `;
 
 export const Container = styled.div`
@@ -17,6 +22,7 @@ export const Container = styled.div`
   grid-template-columns: repeat(7, 1fr);
   border: 1px solid ${({ theme }) => theme.palette.primary[300]};
 `;
+
 export const Date = styled.div<CalenderStyleProps>`
   width: 155px;
   height: 155px;
@@ -32,6 +38,12 @@ export const Date = styled.div<CalenderStyleProps>`
   justify-content: space-between;
   padding-bottom: 2rem;
 
+  ${media.custom(1680)} {
+    width: 125px;
+    height: 125px;
+    padding-bottom: 1rem;
+  }
+
   :hover {
     ${({ isMonth, theme }) => isMonth && `background-color: ${theme.palette.primary[100]};`}
   }
@@ -39,7 +51,7 @@ export const Date = styled.div<CalenderStyleProps>`
 
 export const DateContainer = styled.div`
   color: ${({ theme }) => theme.palette.fontColor};
-  font-size: 0.825rem;
+  font-size: rem;
   & > p {
     padding: 0.2rem 1rem;
     font-weight: ${({ theme }) => theme.fontWeight.bold};

@@ -1,15 +1,35 @@
 import styled from 'styled-components';
+import { media } from 'styles/media';
 
-export const Modal = styled.div`
-  position: absolute;
+type MemoModalType = {
+  isModal: boolean;
+};
+
+export const Modal = styled.div<MemoModalType>`
+  position: sticky;
   background-color: #edece9;
-  top: 50%;
-  left: 50%;
-  width: 30vw;
-  aspect-ratio: 3/5;
-  transform: translate(-50%, -50%);
+  top: 60px;
+  max-height: 760px;
   z-index: 100;
   border-radius: 1rem;
+  margin-left: 2rem;
+  display: ${({ isModal }) => (isModal ? 'block' : 'none')};
+  transition: transform 1s ease-in-out;
+  transform: translateX(100%);
+
+  & > button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: ${({ theme }) => theme.palette.primary[300]};
+    color: ${({ theme }) => theme.palette.fontSubColor};
+    height: 48px;
+
+    :hover {
+      background-color: transparent;
+      color: ${({ theme }) => theme.palette.primary[300]};
+    }
+  }
 `;
 
 export const Header = styled.div`
@@ -57,13 +77,18 @@ export const SubTitle = styled.input`
 export const Content = styled.div`
   padding: 0 1rem;
   width: 100%;
-  height: 50%;
+  height: 100%;
+  position: relative;
 
   & textarea {
     width: 100%;
-    height: 100%;
+    height: 60%;
     resize: none;
     background-color: transparent;
     border: none;
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;

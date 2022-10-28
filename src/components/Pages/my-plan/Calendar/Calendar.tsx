@@ -23,9 +23,6 @@ function MyPlanCalendar({ date }: any) {
 
   return (
     <>
-      {isOpenMemoModal && (
-        <MyPlanMemoModal selectDate={selectDate} setIsOpenMemoModal={setIsOpenMemoModal} />
-      )}
       <Styled.Wrapper style={{ zIndex: '0' }}>
         <Styled.Header>PLANNER</Styled.Header>
         <Styled.Container>
@@ -51,6 +48,11 @@ function MyPlanCalendar({ date }: any) {
           ))}
         </Styled.Container>
       </Styled.Wrapper>
+      <MyPlanMemoModal
+        selectDate={selectDate}
+        isOpenMemoModal={isOpenMemoModal}
+        setIsOpenMemoModal={setIsOpenMemoModal}
+      />
     </>
   );
 }

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import * as Styled from './Style';
 
 function MyPlanSideTodo({ todo }: any) {
-  const [isOpenTodoForm, setIsOpenTodoForm] = useState<Boolean>(false);
+  const [isOpenTodoForm, setIsOpenTodoForm] = useState<boolean>(false);
 
   const onOpenTodoForm = () => {
     setIsOpenTodoForm((prev) => !prev);
