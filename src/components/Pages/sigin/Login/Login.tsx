@@ -9,7 +9,7 @@ function SignLogin() {
           <span>이메일</span>
         </Styeld.InputBox>
         <Styeld.InputBox>
-          <input />
+          <input type="password" />
           <span>비밀번호</span>
         </Styeld.InputBox>
         <button>로그인</button>

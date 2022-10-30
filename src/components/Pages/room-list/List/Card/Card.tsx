@@ -4,23 +4,25 @@ import * as Styled from './Style';
 function RoomCard({ room }: any) {
   const [isOpenCard, setIsOpenCard] = useState(false);
 
-  const onOpenCard = () => {
+  const onOpenCard = (e: any) => {
     setIsOpenCard((prev) => !prev);
   };
 
   return (
-    <Styled.Wrapper isOpenCard={isOpenCard} onClick={onOpenCard}>
-      <Styled.Header>
-        <Styled.Title>{room.title}</Styled.Title>
-        <div>
-          <span>
-            {room.currentMember} / {room.maxMember}
-          </span>
-          <Styled.State>잠금</Styled.State>
-          <button>{isOpenCard ? '-' : '+'}</button>
-        </div>
-      </Styled.Header>
-      <Styled.Container>{room.description}</Styled.Container>
+    <Styled.Wrapper isOpenCard={isOpenCard}>
+      <div onClick={onOpenCard}>
+        <Styled.Header>
+          <Styled.Title>{room.title}</Styled.Title>
+          <div>
+            <span>
+              {room.currentMember} / {room.maxMember}
+            </span>
+            <Styled.State>잠금</Styled.State>
+            <button>{isOpenCard ? '-' : '+'}</button>
+          </div>
+        </Styled.Header>
+        <Styled.Container>{room.description}</Styled.Container>
+      </div>
       <Styled.Content isOpenCard={isOpenCard}>
         <p>
           <span>개설일: </span>
