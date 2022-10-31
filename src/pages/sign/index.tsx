@@ -2,30 +2,30 @@ import SignLogin from 'components/Pages/sigin/Login/Login';
 import SignSignUp from 'components/Pages/sigin/SiginUp/SiginUp';
 import { useState } from 'react';
 import styled from 'styled-components';
-import { flexAlignCenter, flexCenter } from 'styles/common';
+import { flexAlignCenter, flexCenter, logoheader } from 'styles/common';
 
 function SignPage() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
     <Styled.Wraaper>
-      <Styled.Main>
+      <Styled.Logo>
         <Styled.Header>mogaco</Styled.Header>
         <Styled.Container>
           오늘도
           <br />
           모가코,
         </Styled.Container>
-      </Styled.Main>
-      <Styled.Form>
-        <Styled.FormHeader>
+      </Styled.Logo>
+      <Styled.Main>
+        <Styled.MainHeader>
           <ul>
             <li onClick={() => setIsLogin(true)}>로그인</li>
             <li onClick={() => setIsLogin(false)}>회원가입</li>
           </ul>
-        </Styled.FormHeader>
+        </Styled.MainHeader>
         {isLogin ? <SignLogin /> : <SignSignUp />}
-      </Styled.Form>
+      </Styled.Main>
     </Styled.Wraaper>
   );
 }
@@ -36,21 +36,14 @@ const Wraaper = styled.div`
   height: 100vh;
 `;
 
-const Main = styled.div`
+const Logo = styled.div`
   width: 520px;
   height: 100%;
   background-color: ${({ theme }) => theme.palette.primary[300]};
 `;
 
 const Header = styled.div`
-  width: 100%;
-  height: 48px;
-  padding: 0 3rem;
-  color: ${({ theme }) => theme.palette.fontSubColor};
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  font-size: ${({ theme }) => theme.fontSize.xLarge};
-  cursor: pointer;
-  ${flexAlignCenter};
+  ${logoheader};
 `;
 
 const Container = styled.div`
@@ -62,11 +55,11 @@ const Container = styled.div`
   ${flexCenter};
 `;
 
-const Form = styled.form`
+const Main = styled.div`
   width: calc(100% - 520px);
 `;
 
-const FormHeader = styled.div`
+const MainHeader = styled.div`
   width: 100%;
   height: 48px;
   display: flex;
@@ -89,9 +82,9 @@ const FormHeader = styled.div`
 
 const Styled = {
   Wraaper,
-  Main,
+  Logo,
   Header,
   Container,
-  Form,
-  FormHeader,
+  Main,
+  MainHeader,
 };

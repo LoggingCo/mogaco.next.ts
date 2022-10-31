@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
-import { flexAlignCenter, flexCenter } from '../styles/common';
+import { flexCenter, logoheader } from '../styles/common';
 import { desktopM } from '../styles/media';
 import Typist from 'react-typist';
 
@@ -47,14 +47,7 @@ const Wrapper = styled.div`
 `;
 
 const Header = styled.div`
-  width: 100%;
-  height: 48px;
-  padding: 0 3rem;
-  color: ${({ theme }) => theme.palette.fontSubColor};
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  font-size: ${({ theme }) => theme.fontSize.xLarge};
-  cursor: pointer;
-  ${flexAlignCenter};
+  ${logoheader};
 `;
 
 const curser = keyframes`

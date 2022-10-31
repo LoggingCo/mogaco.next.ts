@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexAlignCenter, flexCenter } from 'styles/common';
+import { flexAlignCenter, flexCenter, logoheader } from 'styles/common';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -9,14 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const Header = styled.div`
-  width: 100%;
-  height: 48px;
-  padding: 0 3rem;
-  color: ${({ theme }) => theme.palette.fontSubColor};
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
-  font-size: ${({ theme }) => theme.fontSize.xLarge};
-  cursor: pointer;
-  ${flexAlignCenter};
+  ${logoheader};
 `;
 
 export const Container = styled.div`

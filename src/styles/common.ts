@@ -12,12 +12,7 @@ export const BlackBackGround = styled.div`
   z-index: 100;
 `;
 
-// layout container
-export const LayoutContainer = styled.div`
-  display: flex;
-`;
-
-// align
+// center
 
 export const absoluteCenter = css`
   position: absolute;
@@ -25,6 +20,15 @@ export const absoluteCenter = css`
   left: 50%;
   transform: translate(-50%, -50%);
 `;
+
+export const fixCenter = css`
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
+
+// flex
 
 export const flexCenter = css`
   display: flex;
@@ -55,4 +59,16 @@ export const flexJustifyCenter = css`
 export const flexJustifyBetween = css`
   display: flex;
   justify-content: space-between;
+`;
+
+// layout header
+export const logoheader = css`
+  width: 100%;
+  height: 48px;
+  padding: 0 3rem;
+  color: ${({ theme }) => theme.palette.fontSubColor};
+  font-weight: ${({ theme }) => theme.fontWeight.bold};
+  font-size: ${({ theme }) => theme.fontSize.xLarge};
+  cursor: pointer;
+  ${flexAlignCenter};
 `;

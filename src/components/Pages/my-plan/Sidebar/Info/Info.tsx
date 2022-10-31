@@ -1,4 +1,4 @@
-import { parseLevel } from 'utils/parseLevel';
+import { parseLevel } from 'libs/utils/parseLevel';
 import * as Styled from './Style';
 
 function MyPlanSideInfo({ info }: any) {

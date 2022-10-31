@@ -1,6 +1,6 @@
 import { userPlanData } from 'libs/mock/user.data';
 import { useState } from 'react';
-import { parseMonth } from 'utils/parseMonth';
+import { parseMonth } from 'libs/utils/parseMonth';
 import MyPlanSideInfo from './Info/Info';
 import MyPlanSideMogaco from './Mogaco/Mogaco';
 import MyPlanSideTodo from './Todo/Todo';

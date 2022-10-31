@@ -1,5 +1,5 @@
 import RoomListHeader from 'components/Pages/room-list/Header/Header';
-import RoomCardList from 'components/Pages/room-list/List/List';
+import RoomCardList from 'components/Pages/room-list/RoomList/List';
 import RoomListSidebar from 'components/Pages/room-list/Sidebar';
 import styled from 'styled-components';
 
