@@ -12,6 +12,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 2,
@@ -26,6 +27,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 3,
@@ -40,6 +42,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 4,
@@ -54,6 +57,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 5,
@@ -68,6 +72,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 6,
@@ -82,6 +87,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 7,
@@ -96,6 +102,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 8,
@@ -110,6 +117,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 9,
@@ -124,6 +132,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 10,
@@ -138,6 +147,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 11,
@@ -152,6 +162,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 12,
@@ -166,6 +177,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 13,
@@ -180,6 +192,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 14,
@@ -194,6 +207,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 15,
@@ -208,6 +222,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 16,
@@ -222,6 +237,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
   {
     id: 17,
@@ -236,6 +252,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 18,
@@ -250,6 +267,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 19,
@@ -264,6 +282,7 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: true,
   },
   {
     id: 20,
@@ -278,5 +297,6 @@ export const RoomListData = [
     totalhour: '215d 12h',
     isPublic: true,
     isRecruiting: true,
+    private: false,
   },
 ];

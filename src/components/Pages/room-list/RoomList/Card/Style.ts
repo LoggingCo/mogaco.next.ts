@@ -5,6 +5,7 @@ import { flexCenter, flexJustifyBetween } from 'styles/common';
 // styled-components
 type CardStyledType = {
   isOpenCard: boolean;
+  status?: boolean;
 };
 
 // card styled
@@ -77,8 +78,16 @@ export const Content = styled.div<CardStyledType>`
 
   & button {
     font-size: 12px;
+    width: ${({ status }) => !status && '100%'};
+    background-color: ${({ status, theme }) => !status && theme.palette.primary[300]};
+    color: ${({ status }) => !status && '#fff'};
+    height: ${({ status }) => !status && '24px'};
+    border-radius: ${({ status }) => !status && '8px'};
+
     :hover {
-      color: ${({ theme }) => theme.palette.primary[300]};
+      color: ${({ theme, status }) => status && theme.palette.primary[300]};
+      background-color: ${({ status, theme }) => !status && theme.palette.primary[100]};
+      color: ${({ status, theme }) => !status && theme.palette.primary[300]};
     }
   }
 `;

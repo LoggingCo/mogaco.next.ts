@@ -8,6 +8,8 @@ function RoomCard({ room }: any) {
     setIsOpenCard((prev) => !prev);
   };
 
+  console.log(room);
+
   return (
     <Styled.Wrapper isOpenCard={isOpenCard}>
       <div onClick={onOpenCard}>
@@ -17,13 +19,14 @@ function RoomCard({ room }: any) {
             <span>
               {room.currentMember} / {room.maxMember}
             </span>
-            <Styled.State>잠금</Styled.State>
+
+            <Styled.State>{room.private ? '잠금' : '공개'}</Styled.State>
             <button>{isOpenCard ? '-' : '+'}</button>
           </div>
         </Styled.Header>
         <Styled.Container>{room.description}</Styled.Container>
       </div>
-      <Styled.Content isOpenCard={isOpenCard}>
+      <Styled.Content isOpenCard={isOpenCard} status={room.private}>
         <p>
           <span>개설일: </span>
           <span>{room.startDate}</span>
@@ -36,8 +39,9 @@ function RoomCard({ room }: any) {
           <span>유지기간:</span>
           <span>128일 째</span>
         </p>
+
         <p>
-          <input type="passowrd" placeholder="PASSWORD" />
+          {room.private && <input type="passowrd" placeholder="PASSWORD" />}
           <button>입장</button>
         </p>
       </Styled.Content>
