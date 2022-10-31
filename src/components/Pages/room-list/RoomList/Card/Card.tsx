@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { useState } from 'react';
 import * as Styled from './Style';
 
@@ -44,6 +45,14 @@ function RoomCard({ room }: any) {
           {room.private && <input type="passowrd" placeholder="PASSWORD" />}
           <button>입장</button>
         </p>
+        {room.private && <Styled.Error>비밀번호가 틀렸습니다.</Styled.Error>}
+        {room.private && (
+          <Styled.Inquiry>
+            <Link href="/direct-message/3">
+              <span>방장에게 문의하기</span>
+            </Link>
+          </Styled.Inquiry>
+        )}
       </Styled.Content>
 
       <Styled.Category>

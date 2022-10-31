@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.form`
-  position: absolute;
+  position: sticky;
   width: 100%;
   bottom: 0;
   height: 48px;

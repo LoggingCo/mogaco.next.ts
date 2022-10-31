@@ -7,7 +7,7 @@ function DirectMessageUser({ user, limit }: any) {
 
   return (
     <Styled.Wrapper key={user.name}>
-      <Styled.Header>
+      <Styled.Header status={user.status}>
         <Styled.User>
           <span> {parseLevel(user.level)}</span>
           {user.name}

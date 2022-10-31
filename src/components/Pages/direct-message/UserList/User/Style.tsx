@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { flexAlignCenter } from 'styles/common';
 
 type UserStyleProps = {
-  status: 'online' | 'offline';
+  status: boolean;
 };
 
 export const Wrapper = styled.li`
@@ -14,10 +14,11 @@ export const Wrapper = styled.li`
   }
 `;
 
-export const Header = styled.div`
+export const Header = styled.div<UserStyleProps>`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  opacity: ${({ status }) => (status ? 1 : 0.5)};
 `;
 
 export const User = styled.div`
@@ -31,11 +32,11 @@ export const User = styled.div`
 `;
 
 export const Status = styled.span<UserStyleProps>`
-  display: ${({ status }) => (status === 'online' ? '#inline-block' : 'none')};
+  display: ${({ status }) => (status ? '#inline-block' : 'none')};
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: ${({ status }) => status === 'online' && '#008000'};
+  background-color: ${({ status }) => status && '#008000'};
 `;
 
 export const Message = styled.div`
@@ -52,7 +53,7 @@ export const Message = styled.div`
 export const LastMessage = styled.div`
   max-width: 80%;
   padding-top: 8px;
-  font-size: 14px;
+  font-size: 12px;
   color: #707070;
   display: flex;
   align-items: flex-end;

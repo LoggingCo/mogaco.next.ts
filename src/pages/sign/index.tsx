@@ -1,3 +1,4 @@
+import LayoutHeader from 'components/Layout/Header';
 import SignLogin from 'components/Pages/sigin/Login/Login';
 import SignSignUp from 'components/Pages/sigin/SiginUp/SiginUp';
 import { useState } from 'react';
@@ -10,7 +11,7 @@ function SignPage() {
   return (
     <Styled.Wraaper>
       <Styled.Logo>
-        <Styled.Header>mogaco</Styled.Header>
+        <LayoutHeader />
         <Styled.Container>
           오늘도
           <br />

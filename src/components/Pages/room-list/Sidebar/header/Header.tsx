@@ -17,6 +17,7 @@ function SideHeader({ title, style, active, setActive }: SideHeaderProps) {
   return (
     <Header style={style}>
       <p> {title}</p>
+      {title === '내 모임' && <span>관리</span>}
       {active !== undefined && <span onClick={onToggleActive}> {active ? '닫기' : '열기'} </span>}
     </Header>
   );

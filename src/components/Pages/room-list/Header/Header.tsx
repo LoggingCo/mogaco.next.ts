@@ -1,3 +1,4 @@
+import LayoutHeader from 'components/Layout/Header';
 import { useState } from 'react';
 import RoomListHeadeSibebar from './Sidebar/Sildebar';
 import * as Styled from './Style';
@@ -12,7 +13,7 @@ function RoomListHeader() {
 
   return (
     <Styled.Wrapper>
-      <Styled.Header>mogaco</Styled.Header>
+      <LayoutHeader />
       <Styled.Container>
         <Styled.Logo>오늘도 모가코 ,</Styled.Logo>
         <Styled.Form>

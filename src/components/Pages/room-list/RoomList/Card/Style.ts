@@ -54,7 +54,7 @@ export const Container = styled.div`
 export const Content = styled.div<CardStyledType>`
   width: 50%;
   margin: 0 auto;
-  height: ${({ isOpenCard }) => (isOpenCard ? '150px' : '0')};
+  height: ${({ isOpenCard }) => (isOpenCard ? '170px' : '0')};
   transition: height 0.5s ease-in-out;
   overflow: hidden;
   margin-top: 16px;
@@ -102,5 +102,21 @@ export const Category = styled.div`
     font-size: 10px;
     background-color: ${({ theme }) => theme.palette.primary[300]};
     color: ${({ theme }) => theme.palette.fontSubColor};
+  }
+`;
+
+export const Error = styled.div`
+  color: ${({ theme }) => theme.palette.error};
+  font-size: 12px;
+`;
+
+export const Inquiry = styled.p`
+  color: ${({ theme }) => theme.palette.primary[300]};
+  & span {
+    border-bottom: 1px solid ${({ theme }) => theme.palette.primary[300]};
+    cursor: pointer;
+    :hover {
+      opacity: 0.7;
+    }
   }
 `;

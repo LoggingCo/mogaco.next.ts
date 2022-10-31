@@ -7,4 +7,8 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.palette.primary[100]};
   border: 1px solid ${({ theme }) => theme.palette.primary[300]};
   border-right: none;
+  overflow: scroll;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 `;
