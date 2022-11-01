@@ -1,11 +1,17 @@
+import { editModal } from 'atom/modal/atoms';
+import Modal from 'components/Common/Modal/Modal';
 import RoomListHeader from 'components/Pages/room-list/Header/Header';
 import RoomCardList from 'components/Pages/room-list/RoomList/List';
 import RoomListSidebar from 'components/Pages/room-list/Sidebar';
+import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 
 function RoomListPage() {
+  const [isOpenEditModal, setIsOpenEditModal] = useRecoilState(editModal);
+
   return (
     <>
+      {isOpenEditModal && <Modal type={'내 정보 수정'} setCloseModal={setIsOpenEditModal} />}
       <Styled.Wrapper>
         <RoomListHeader />
         <Styled.Container>
@@ -29,7 +35,8 @@ const Container = styled.div`
 `;
 
 const Content = styled.div`
-  width: 1440px;
+  min-width: 980px;
+  max-width: 1440px;
   padding-top: 1rem;
   margin: 0 auto;
   overflow-y: scroll;

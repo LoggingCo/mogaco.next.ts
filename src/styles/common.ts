@@ -2,14 +2,14 @@ import styled, { css } from 'styled-components';
 
 // background
 
-export const BlackBackGround = styled.div`
+export const ModalBackGround = styled.div`
   width: 100%;
   height: 100vh;
   top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: fixed;
+  background: rgba(52, 59, 62, 0.4);
   z-index: 100;
+  position: fixed;
 `;
 
 // center

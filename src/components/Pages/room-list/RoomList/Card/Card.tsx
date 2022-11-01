@@ -9,8 +9,6 @@ function RoomCard({ room }: any) {
     setIsOpenCard((prev) => !prev);
   };
 
-  console.log(room);
-
   return (
     <Styled.Wrapper isOpenCard={isOpenCard}>
       <div onClick={onOpenCard}>

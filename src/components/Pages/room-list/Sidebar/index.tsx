@@ -1,3 +1,6 @@
+import Modal from 'components/Common/Modal/Modal';
+import { userData } from 'libs/mock/user.data';
+import { useState } from 'react';
 import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';
 import SideMyInfo from './my-info/Myinfo';
@@ -7,14 +10,16 @@ import SideSiginIn from './sign-in/Signin';
 import SideWeeklyRank from './weekly-rank/Weelky';
 
 function RoomListSidebar() {
+  const [user, setUser] = useState<any>(userData);
+
   return (
     <Wrapper>
       <SidebarSearch />
       <SideSiginIn />
-      {/* <SideMyInfo /> */}
-      <SideMyMogaco />
-      <SideMonthlyRank />
-      <SideWeeklyRank />
+      {/* <SideMyInfo userInfo={user.user} /> */}
+      <SideMyMogaco myMogaco={user.mogaco} />
+      <SideMonthlyRank monthlyRank={user.monthly} />
+      <SideWeeklyRank weeklyRank={user.weekly} />
     </Wrapper>
   );
 }

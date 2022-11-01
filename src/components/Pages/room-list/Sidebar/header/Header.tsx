@@ -1,4 +1,7 @@
+import { editModal } from 'atom/modal/atoms';
+import Modal from 'components/Common/Modal/Modal';
 import { CSSProperties, Dispatch, SetStateAction } from 'react';
+import { useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
 import { flexJustifyBetween } from 'styles/common';
 
@@ -10,16 +13,25 @@ type SideHeaderProps = {
 };
 
 function SideHeader({ title, style, active, setActive }: SideHeaderProps) {
+  const setIsOpenEditModal = useSetRecoilState(editModal);
+
   const onToggleActive = () => {
     setActive && setActive((prev) => !prev);
   };
 
+  const onOpenEditModal = () => {
+    setIsOpenEditModal(true);
+  };
+
   return (
-    <Header style={style}>
-      <p> {title}</p>
-      {title === '내 모임' && <span>관리</span>}
-      {active !== undefined && <span onClick={onToggleActive}> {active ? '닫기' : '열기'} </span>}
-    </Header>
+    <>
+      {/* <Modal type={'내 정보 수정'} /> */}
+      <Header style={style}>
+        <p> {title}</p>
+        {title === '내 모임' && <span onClick={onOpenEditModal}>관리</span>}
+        {active !== undefined && <span onClick={onToggleActive}> {active ? '닫기' : '열기'} </span>}
+      </Header>
+    </>
   );
 }
 export default SideHeader;

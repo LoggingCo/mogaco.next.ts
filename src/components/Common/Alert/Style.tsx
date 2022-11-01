@@ -12,7 +12,6 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.palette.subColor};
   color: ${({ theme }) => theme.palette.fontSubColor};
   text-align: center;
-  z-index: 100;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   animation: ${fadein} 0.5s;
 `;

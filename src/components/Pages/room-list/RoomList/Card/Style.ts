@@ -12,7 +12,8 @@ type CardStyledType = {
 export const Wrapper = styled.div<CardStyledType>`
   margin: 8px;
   width: 48%;
-  min-height: 120px;
+  min-height: 130px;
+  z-index: 0;
   ${({ isOpenCard }) => (isOpenCard ? 'height: 100%' : 'height: 120px')};
   position: relative;
   background-color: #edece9;
@@ -49,6 +50,7 @@ export const Container = styled.div`
   margin: 0 auto;
   color: #999;
   font-size: 12px;
+  line-height: 1.2;
 `;
 
 export const Content = styled.div<CardStyledType>`

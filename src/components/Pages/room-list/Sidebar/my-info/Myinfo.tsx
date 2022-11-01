@@ -1,14 +1,15 @@
+import { editModal } from 'atom/modal/atoms';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { useSetRecoilState } from 'recoil';
 import SideHeader from '../header/Header';
 import * as Styled from './Style';
 
-function SideMyInfo() {
-  const [userInfo, setUserInfo] = useState<any>(null);
-
-  useEffect(() => {
-    setUserInfo({ name: '중급뵹아리', day: 256, continue: 14, total: 192, mogaco: 3 });
-  }, []);
+function SideMyInfo({ userInfo }: any) {
+  const setIsOpenEditModal = useSetRecoilState(editModal);
+  const onOpenEditModal = () => {
+    setIsOpenEditModal(true);
+  };
 
   return (
     userInfo && (
@@ -16,7 +17,7 @@ function SideMyInfo() {
         <SideHeader title={'내 정보'} style={{ borderRadius: '0 14px 0 0' }} />
         <Styled.Container>
           <Styled.Name>
-            안녕하세요? <span>🐣 {userInfo.name}</span>님
+            안녕하세요? <span onClick={onOpenEditModal}>🐣 {userInfo.name}</span>님
             <Link href={'/my-plan'}>
               <a>
                 <p>내 학습 플래너</p>

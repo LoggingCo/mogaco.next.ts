@@ -1,6 +1,5 @@
-import { BlackBackGround } from 'styles/common';
+import { ModalBackGround } from 'styles/common';
 import MyMogacoModal from './edit-info/EditInfo';
-import EditInfoModal from './my-mogaco/EditInfo';
 import * as Styled from './Style';
 
 function Modal({ type, setCloseModal }: any) {
@@ -9,21 +8,18 @@ function Modal({ type, setCloseModal }: any) {
   };
 
   return (
-    <BlackBackGround>
+    <ModalBackGround>
       <Styled.Wrapper>
         <Styled.Header>
           <p>{type}</p>
           <button onClick={onCloseModal}>x</button>
         </Styled.Header>
         <Styled.Container>
-          {type === 'edit-info' ? (
-            <EditInfoModal />
-          ) : type === 'my-mogaco' ? (
-            <MyMogacoModal />
-          ) : null}
+          {type === '내 정보 수정' && <MyMogacoModal />}
+          <Styled.Button onClick={onCloseModal}>APPLY</Styled.Button>
         </Styled.Container>
       </Styled.Wrapper>
-    </BlackBackGround>
+    </ModalBackGround>
   );
 }
 export default Modal;

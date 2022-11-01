@@ -1,4 +1,26 @@
-export const userData = [];
+export const userData = {
+  user: { name: '중급뵹아리', day: 256, continue: 14, total: 192, mogaco: 3 },
+  mogaco: [
+    { name: '모여라ㅏㅏㅏ친구들', week: 6, total: 192 },
+    { name: '퇴근 후 스터디', week: 12, total: 256 },
+    { name: 'proj_mo', week: 32, total: 697 },
+  ],
+  monthly: [
+    { rank: 1, name: '모여라ㅏㅏㅏ친구들' },
+    { rank: 2, name: "who's the one" },
+    { rank: 3, name: '실리콘벨리 가즈아' },
+    { rank: 4, name: '모임 모임?' },
+    { rank: 5, name: '공무원 합격은 다모임' },
+  ],
+  weekly: [
+    { rank: 1, name: '🐤 Top-hoon' },
+    { rank: 2, name: '🐣 Logginco' },
+    { rank: 3, name: '🐥 Minzy123_kim' },
+    { rank: 4, name: '🐣 아기 개발자04' },
+    { rank: 5, name: '🐥 익명의 프론트' },
+  ],
+};
+
 export const userPlanData = {
   user: {
     name: '병아리개발자',
