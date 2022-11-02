@@ -78,3 +78,35 @@ export const userPlanData = {
     },
   ],
 };
+
+export const userEditinfo = {
+  name: '중금뵹아리',
+  email: 'korpg95274@gmail.com',
+  password: '************',
+  mogaco: [
+    {
+      id: 1,
+      name: '모여라ㅏㅏㅏ친구들',
+      rank: 2,
+      currentMember: 3,
+      maxMember: 5,
+      day: 271,
+    },
+    {
+      id: 2,
+      name: '퇴근 후 스터디',
+      rank: 182,
+      currentMember: 3,
+      maxMember: 7,
+      day: 28,
+    },
+    {
+      id: 3,
+      name: 'proj_mo',
+      rank: 352,
+      currentMember: 3,
+      maxMember: 10,
+      day: 42,
+    },
+  ],
+};

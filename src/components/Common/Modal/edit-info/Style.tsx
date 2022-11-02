@@ -33,3 +33,5 @@ export const inputBox = styled.div`
     }
   }
 `;
+
+export const Content = styled.div``;
