@@ -18,6 +18,11 @@ function EditModalMogaco({ mogaco, index }: any) {
           <span>D</span>+ {mogaco.day}
         </p>
       </Styled.Info>
+      <Styled.ButtonGroup>
+        <button>모임탈퇴</button>
+        <button>팀원목록</button>
+        <button>코딩하러가기</button>
+      </Styled.ButtonGroup>
     </Styled.Wrapper>
   );
 }
