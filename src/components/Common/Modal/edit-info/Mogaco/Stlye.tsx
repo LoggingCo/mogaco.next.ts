@@ -35,4 +35,15 @@ export const Info = styled.div`
   }
 `;
 
-export const ButtonGroup = styled.div``;
+export const ButtonGroup = styled.div`
+  display: flex;
+  font-size: ${({ theme }) => theme.fontSize.small};
+  & button {
+    margin-left: 8px;
+    color: #999;
+    border-bottom: 1px solid #999;
+    :hover {
+      color: ${({ theme }) => theme.palette.primary[300]};
+    }
+  }
+`;

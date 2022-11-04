@@ -91,6 +91,33 @@ export const userEditinfo = {
       currentMember: 3,
       maxMember: 5,
       day: 271,
+      master: true,
+      userList: [
+        {
+          name: '중급뵹아리',
+          time: '24d 8h',
+          logined: '2021-08-14',
+          level: 2,
+        },
+        {
+          name: '중급뵹아리',
+          time: '14d 8h',
+          logined: '2021-09-14',
+          level: 1,
+        },
+        {
+          name: '중급뵹아리',
+          time: '8h',
+          logined: '2021-09-14',
+          level: 0,
+        },
+        {
+          name: '중급뵹아리',
+          time: '1d 8h',
+          logined: '2021-07-14',
+          level: 3,
+        },
+      ],
     },
     {
       id: 2,
@@ -99,6 +126,33 @@ export const userEditinfo = {
       currentMember: 3,
       maxMember: 7,
       day: 28,
+      master: false,
+      userList: [
+        {
+          name: '중급뵹아리',
+          time: '24d 8h',
+          logined: '2021-08-14',
+          level: 2,
+        },
+        {
+          name: '중급뵹아리',
+          time: '14d 8h',
+          logined: '2021-09-14',
+          level: 1,
+        },
+        {
+          name: '중급뵹아리',
+          time: '8h',
+          logined: '2021-09-14',
+          level: 0,
+        },
+        {
+          name: '중급뵹아리',
+          time: '1d 8h',
+          logined: '2021-07-14',
+          level: 3,
+        },
+      ],
     },
     {
       id: 3,
@@ -107,6 +161,32 @@ export const userEditinfo = {
       currentMember: 3,
       maxMember: 10,
       day: 42,
+      userList: [
+        {
+          name: '중급뵹아리',
+          time: '24d 8h',
+          logined: '2021-08-14',
+          level: 2,
+        },
+        {
+          name: '중급뵹아리',
+          time: '14d 8h',
+          logined: '2021-09-14',
+          level: 1,
+        },
+        {
+          name: '중급뵹아리',
+          time: '8h',
+          logined: '2021-09-14',
+          level: 0,
+        },
+        {
+          name: '중급뵹아리',
+          time: '1d 8h',
+          logined: '2021-07-14',
+          level: 3,
+        },
+      ],
     },
   ],
 };

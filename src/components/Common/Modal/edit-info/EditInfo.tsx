@@ -11,23 +11,22 @@ function MyMogacoModal() {
       <Styled.inputBox>
         <p>
           <span>별명</span>
-          <input value={userInfo.name} />
+          <input defaultValue={userInfo.name} />
           <button>수정</button>
         </p>
         <p>
           <span>이메일</span>
-          <input value={userInfo.email} />
-          <button>수정</button>
+          <input defaultValue={userInfo.email} />
         </p>
         <p>
           <span>비밀번호</span>
-          <input value={userInfo.password} />
+          <input defaultValue={userInfo.password} disabled={true} />
           <button>수정</button>
         </p>
       </Styled.inputBox>
       <Styled.Content>
         {userInfo.mogaco.map((mogaco, index) => (
-          <EditModalMogaco mogaco={mogaco} index={index} />
+          <EditModalMogaco mogaco={mogaco} index={index} key={index} />
         ))}
       </Styled.Content>
     </Styled.Wrapper>
