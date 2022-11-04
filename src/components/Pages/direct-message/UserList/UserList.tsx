@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react';
 import { parseLevel } from 'libs/utils/parseLevel';
 import * as Styled from './Style';
-import { useMedia } from 'hooks/Comoon/useMedia';
+import { useMedia } from 'hooks/Common/useMedia';
 import DirectMessageUser from './User/User';
 import { DirectUser } from 'libs/mock/direct.data';
 
