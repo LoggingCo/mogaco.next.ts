@@ -3,7 +3,6 @@ import { userData } from 'libs/mock/user.data';
 import { useState } from 'react';
 import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';
-import SideMyInfo from './my-info/Myinfo';
 import SideMyMogaco from './my-mogaco/Mymogaco';
 import SidebarSearch from './Search/Search';
 import SideSiginIn from './sign-in/Signin';

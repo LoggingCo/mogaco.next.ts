@@ -51,7 +51,7 @@ export const Date = styled.div<CalenderStyleProps>`
 
 export const DateContainer = styled.div`
   color: ${({ theme }) => theme.palette.fontColor};
-  font-size: rem;
+  font-size: 0.825rem;
   & > p {
     padding: 0.2rem 1rem;
     font-weight: ${({ theme }) => theme.fontWeight.bold};

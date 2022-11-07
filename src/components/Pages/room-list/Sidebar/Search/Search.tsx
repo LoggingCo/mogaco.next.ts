@@ -10,8 +10,8 @@ function SidebarSearch() {
     <Styled.Wrapper>
       <h1>🔥 인기 카테고리</h1>
       <Styled.List>
-        {PopularCate.map((cate: any) => (
-          <Styled.Item key={cate.id}>
+        {PopularCate.map((cate: any, index: number) => (
+          <Styled.Item key={index}>
             <span>{cate}</span>
           </Styled.Item>
         ))}
@@ -21,8 +21,8 @@ function SidebarSearch() {
         <button>검색</button>
       </Styled.Form>
       <Styled.Categroy>
-        {selectedCate.map((cate: string) => (
-          <span key={cate}>
+        {selectedCate.map((cate: string, index: number) => (
+          <span key={index}>
             {cate}
             <button>x</button>
           </span>

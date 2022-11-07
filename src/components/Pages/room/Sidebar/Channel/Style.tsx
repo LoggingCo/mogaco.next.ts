@@ -2,7 +2,6 @@ import styled from 'styled-components';
 import { flexAlignCenter } from 'styles/common';
 
 export const Wrapper = styled.div`
-  min-height: 50%;
   max-height: 50%;
   background-color: #3c3c3c;
   overflow: hidden;
@@ -50,6 +49,14 @@ export const ChannlItem = styled.li`
   cursor: pointer;
   :hover {
     transform: scale(1.1);
+  }
+  ${flexAlignCenter};
+  justify-content: space-between;
+  padding-right: 32px;
+
+  & span {
+    cursor: pointer;
+    font-size: ${({ theme }) => theme.fontSize.medium};
   }
 `;
 

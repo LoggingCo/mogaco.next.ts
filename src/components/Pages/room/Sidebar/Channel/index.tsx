@@ -30,7 +30,10 @@ function RoomSidebarChannel({ channelList, master }: any) {
         <Styled.ChannlList>
           {channelList.map((channel: any) => (
             <>
-              <Styled.ChannlItem># {channel.name}</Styled.ChannlItem>
+              <Styled.ChannlItem>
+                # {channel.name}
+                <span>x</span>
+              </Styled.ChannlItem>
               <Styled.UserList>
                 {userList.map((user: any) => (
                   <Styled.UserItem>

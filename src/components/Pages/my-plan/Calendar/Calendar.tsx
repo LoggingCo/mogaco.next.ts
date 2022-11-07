@@ -40,7 +40,9 @@ function MyPlanCalendar({ date }: any) {
                   {dailyhours.map(
                     (daily: any) =>
                       daily.date === date.date &&
-                      daily.mogaco.map((mogaco: any) => <p>{mogaco.time}</p>),
+                      daily.mogaco.map((mogaco: any, index: any) => (
+                        <p key={index}>{mogaco.time}</p>
+                      )),
                   )}
                 </Styled.DateContainer>
               )}

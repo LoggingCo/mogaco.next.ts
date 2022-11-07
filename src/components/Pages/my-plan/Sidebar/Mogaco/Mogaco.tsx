@@ -6,8 +6,8 @@ function MyPlanSideMogaco({ mogaco }: any) {
       <Styled.Header>mogaco List</Styled.Header>
       <Styled.Content>
         <Styled.MogacoList>
-          {mogaco.map((mogaco: any) => (
-            <li key={mogaco.id}>
+          {mogaco.map((mogaco: any, index: number) => (
+            <li key={index}>
               <p>
                 <span></span> {mogaco.name}
               </p>
