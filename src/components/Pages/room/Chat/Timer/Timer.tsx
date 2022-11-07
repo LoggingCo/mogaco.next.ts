@@ -1,20 +1,14 @@
+import { useTimer } from 'hooks/Page/room/useTimer';
 import { parseTimer } from 'libs/utils/parseTimer';
 import { useEffect, useState } from 'react';
 import * as Styled from './Stlye';
 
 function RoomTimer() {
-  const [Timer, setTimer] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimer(Timer + 1);
-    }, 1000);
-    return () => clearInterval(timer);
-  }, [Timer]);
+  const [Timer, setTimer] = useTimer(0);
 
   return (
     <Styled.Timer>
-      <span>{parseTimer(Timer)}</span>
+      <span>{parseTimer(Timer as number)}</span>
     </Styled.Timer>
   );
 }

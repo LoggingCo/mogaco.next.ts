@@ -3,7 +3,7 @@ import { flexAlignCenter } from 'styles/common';
 
 export const Wrapper = styled.div`
   max-height: 50%;
-  background-color: #3c3c3c;
+  background-color: #f4e9e7;
   overflow: hidden;
   position: relative;
 `;
@@ -17,7 +17,7 @@ export const Header = styled.div`
   & h1 {
     color: #636161;
     & span {
-      color: ${({ theme }) => theme.palette.fontSubColor};
+      color: ${({ theme }) => theme.palette.fontColor};
       margin-right: 8px;
       font-size: 12px;
       cursor: pointer;
@@ -25,7 +25,7 @@ export const Header = styled.div`
   }
 
   & button {
-    color: ${({ theme }) => theme.palette.fontSubColor};
+    color: ${({ theme }) => theme.palette.fontColor};
   }
 `;
 
@@ -38,7 +38,7 @@ export const Container = styled.div`
 `;
 
 export const ChannlList = styled.ul`
-  color: ${({ theme }) => theme.palette.fontSubColor};
+  color: ${({ theme }) => theme.palette.fontColor};
   padding-left: 32px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
   font-size: ${({ theme }) => theme.fontSize.large};
