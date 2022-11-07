@@ -101,6 +101,7 @@ export const roomChat = {
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 1,
+      read: false,
     },
     {
       content: '안녕하세요. 반갑습니다 김성용이라고 합니다',
@@ -111,6 +112,7 @@ export const roomChat = {
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 2,
+      read: false,
     },
     {
       content: '이런 우연도 다 있네요 하하하',
@@ -127,18 +129,21 @@ export const roomChat = {
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 1,
+      read: false,
     },
     {
       content: 'ㅡ,.ㅡ',
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 3,
+      read: false,
     },
     {
       content: '안녕하세요. 반갑습니다 김성용이라고 합니다',
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 2,
+      read: false,
     },
     {
       content: '네? 저도 이름이 김성용인데',
@@ -149,12 +154,14 @@ export const roomChat = {
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 1,
+      read: false,
     },
     {
       content: '앗, 제 오타입니다. 저는 기성용입니다',
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 3,
+      read: false,
     },
     {
       content: '그래도 정말 신기하군요 :)',
@@ -165,6 +172,7 @@ export const roomChat = {
       createdAt: dayjs().format(),
       from: '개발자03',
       level: 2,
+      read: false,
     },
     {
       content: 'ㅡ,.ㅡ',
