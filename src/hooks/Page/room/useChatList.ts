@@ -9,7 +9,7 @@ export const useChatList = (roomChat: any) => {
     if (roomChat.length < 0) return;
     const chatList_copy = [...chatList];
 
-    for (let chat of roomChat) {
+    for (const chat of roomChat) {
       const date = dayjs(chat.createdAt).format('YY년 MM월 DD일');
       chatList_copy.push({ date, chatList: [] });
     }
@@ -20,7 +20,7 @@ export const useChatList = (roomChat: any) => {
       );
     });
 
-    for (let chat of roomChat) {
+    for (const chat of roomChat) {
       chatList_copy2.map((day: any) => {
         if (day.date === dayjs(chat.createdAt).format('YY년 MM월 DD일')) {
           day.chatList.push(chat);
