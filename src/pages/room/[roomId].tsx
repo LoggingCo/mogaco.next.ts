@@ -1,6 +1,6 @@
 import RoomChat from 'components/Pages/room/Chat';
 import RoomSidebar from 'components/Pages/room/Sidebar';
-import RoomVideo from 'components/Pages/room/VideoList';
+import RoomVideoList from 'components/Pages/room/VideoList';
 
 import styled from 'styled-components';
 import { flexAlignCenter } from 'styles/common';
@@ -15,14 +15,16 @@ function MogacoRoomPage() {
       <Styled.Container>
         <RoomSidebar />
         <RoomChat />
-        <RoomVideo />
+        <RoomVideoList />
       </Styled.Container>
     </Styled.Wrapper>
   );
 }
 export default MogacoRoomPage;
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  min-width: 1440px;
+`;
 const Header = styled.div`
   ${flexAlignCenter};
   justify-content: space-between;

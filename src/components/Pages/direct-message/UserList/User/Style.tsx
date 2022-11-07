@@ -6,7 +6,7 @@ type UserStyleProps = {
 };
 
 export const Wrapper = styled.li`
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   cursor: pointer;
 
   :hover {

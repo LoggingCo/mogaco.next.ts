@@ -28,6 +28,7 @@ export const InputBox = styled.div`
     position: absolute;
     padding: 2px 8px;
     background-color: #fff;
+    border-radius: 8px;
     color: #999;
     left: 49px;
     top: 12px;

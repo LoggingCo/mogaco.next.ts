@@ -2,8 +2,7 @@ import styled from 'styled-components';
 import { flexAlignCenter } from 'styles/common';
 
 export const Timer = styled.div`
-  width: calc(100% - 25%);
-  min-width: calc(100% - 330px);
+  width: 100%;
   height: 60px;
   ${flexAlignCenter};
   justify-content: center;

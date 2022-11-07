@@ -29,6 +29,7 @@ export const InputBox = styled.div`
     padding: 2px 8px;
     background-color: #fff;
     color: #999;
+    border-radius: 8px;
     left: 50%;
     top: 12px;
     transform: translateX(-50%);

@@ -41,7 +41,7 @@ export const ChannlList = styled.ul`
   color: ${({ theme }) => theme.palette.fontSubColor};
   padding-left: 32px;
   font-weight: ${({ theme }) => theme.fontWeight.bold};
-  font-size: ${({ theme }) => theme.fontSize.xLarge};
+  font-size: ${({ theme }) => theme.fontSize.large};
 `;
 
 export const ChannlItem = styled.li`

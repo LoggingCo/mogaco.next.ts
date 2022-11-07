@@ -32,14 +32,15 @@ function RoomSidebarChannel({ channelList, master }: any) {
             <>
               <Styled.ChannlItem>
                 # {channel.name}
-                <span>x</span>
+                {channel.primary === false && <span>x</span>}
               </Styled.ChannlItem>
               <Styled.UserList>
-                {userList.map((user: any) => (
-                  <Styled.UserItem>
-                    <span>{parseLevel(user.level)}</span> {user.name}
-                  </Styled.UserItem>
-                ))}
+                {channel.primary === false &&
+                  userList.map((user: any) => (
+                    <Styled.UserItem>
+                      <span>{parseLevel(user.level)}</span> {user.name}
+                    </Styled.UserItem>
+                  ))}
               </Styled.UserList>
             </>
           ))}

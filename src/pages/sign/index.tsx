@@ -3,7 +3,7 @@ import SignLogin from 'components/Pages/sigin/Login/Login';
 import SignSignUp from 'components/Pages/sigin/SiginUp/SiginUp';
 import { useState } from 'react';
 import styled from 'styled-components';
-import { flexAlignCenter, flexCenter, logoheader } from 'styles/common';
+import { flexCenter, logoheader } from 'styles/common';
 
 function SignPage() {
   const [isLogin, setIsLogin] = useState(true);

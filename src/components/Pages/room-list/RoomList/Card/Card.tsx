@@ -1,12 +1,23 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import * as Styled from './Style';
 
 function RoomCard({ room }: any) {
+  const router = useRouter();
   const [isOpenCard, setIsOpenCard] = useState(false);
 
   const onOpenCard = (e: any) => {
     setIsOpenCard((prev) => !prev);
+  };
+
+  const onEnterVideo = () => {
+    if (room.private) {
+      router.push(`/room/${room.id}`);
+      return;
+    }
+
+    router.push(`/room/${room.id}`);
   };
 
   return (
@@ -41,7 +52,7 @@ function RoomCard({ room }: any) {
 
         <p>
           {room.private && <input type="passowrd" placeholder="PASSWORD" />}
-          <button>입장</button>
+          <button onClick={onEnterVideo}>입장</button>
         </p>
         {room.private && <Styled.Error>비밀번호가 틀렸습니다.</Styled.Error>}
         {room.private && (
