@@ -9,7 +9,7 @@ import { flexAlignCenter } from 'styles/common';
 function MogacoRoomPage() {
   return (
     <Styled.Wrapper>
-      {/* <RoomFullVideoModal /> */}
+      <RoomFullVideoModal />
       <Styled.Header>
         <span>mogaco</span>
         <Styled.HeaderBuntton>메뉴</Styled.HeaderBuntton>
