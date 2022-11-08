@@ -1,4 +1,5 @@
 import RoomChat from 'components/Pages/room/Chat';
+import RoomFullVideoModal from 'components/Pages/room/Modal/Full';
 import RoomSidebar from 'components/Pages/room/Sidebar';
 import RoomVideoList from 'components/Pages/room/VideoList';
 
@@ -8,9 +9,10 @@ import { flexAlignCenter } from 'styles/common';
 function MogacoRoomPage() {
   return (
     <Styled.Wrapper>
+      {/* <RoomFullVideoModal /> */}
       <Styled.Header>
         <span>mogaco</span>
-        <button>메뉴</button>
+        <Styled.HeaderBuntton>메뉴</Styled.HeaderBuntton>
       </Styled.Header>
       <Styled.Container>
         <RoomSidebar />
@@ -38,10 +40,6 @@ const Header = styled.div`
     font-size: ${({ theme }) => theme.fontSize.xLarge};
     cursor: pointer;
   }
-
-  & button {
-    color: ${({ theme }) => theme.palette.fontSubColor};
-  }
 `;
 const Container = styled.div`
   width: 100%;
@@ -49,8 +47,24 @@ const Container = styled.div`
   display: flex;
 `;
 
+const HeaderBuntton = styled.button`
+  color: ${({ theme }) => theme.palette.fontSubColor};
+  position: relative;
+
+  & ul {
+    position: absolute;
+    width: 180px;
+    padding: 0 16px;
+    background-color: #fff;
+    color: ${({ theme }) => theme.palette.fontColor};
+    top: 32px;
+    z-index: 300;
+  }
+`;
+
 const Styled = {
   Wrapper,
   Header,
+  HeaderBuntton,
   Container,
 };

@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   border-radius: 8px;
   position: relative;
   background-color: rgba(58, 165, 221, 0.8);
+  cursor: pointer;
   ${flexCenter};
 
   & p {
@@ -18,6 +19,10 @@ export const Wrapper = styled.div`
   & video {
     width: 100%;
     height: 100%;
+  }
+
+  :hover {
+    transform: scale(1.1);
   }
 `;
 

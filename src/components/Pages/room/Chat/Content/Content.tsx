@@ -62,7 +62,7 @@ function RoomContent() {
             })}
           </div>
         ))}
-        <div ref={lastchatRef} style={{ height: '1rem' }} />
+        <div ref={lastchatRef} />
       </Styled.Container>
     </Styled.Wrapper>
   );
