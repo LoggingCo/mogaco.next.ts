@@ -2,11 +2,11 @@ import React, { FC } from 'react';
 import * as Styled from './Style';
 
 export interface AlertProps {
-  variant: 'alert' | 'confirm';
-  title: string;
-  children: React.ReactNode;
-  onSucces: () => void;
-  onCancle: () => void;
+  variant?: 'alert' | 'confirm';
+  title?: string;
+  children?: React.ReactNode;
+  onSucces?: () => void;
+  onCancle?: () => void;
 }
 
 const Alert: FC<AlertProps> = ({ variant, title, children, onSucces, onCancle }: AlertProps) => {
