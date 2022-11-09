@@ -1,6 +1,4 @@
-import exp from 'constants';
 import styled from 'styled-components';
-import { flexCenter, flexJustifyBetween } from 'styles/common';
 
 // styled-components
 type CardStyledType = {
@@ -14,7 +12,7 @@ export const Wrapper = styled.div<CardStyledType>`
   width: 48%;
   min-height: 130px;
   z-index: 0;
-  ${({ isOpenCard }) => (isOpenCard ? 'height: 100%' : 'height: 120px')};
+  ${({ isOpenCard }) => (isOpenCard ? 'min-height: 240px' : 'height: 130px')};
   position: relative;
   background-color: #edece9;
   transition: all 0.5s ease-in-out;
