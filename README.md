@@ -39,3 +39,55 @@
 #### 12. 비디오 룸 풀 페이지 모달 레이아웃 구현완료 - 반응형 퍼블리싱 시작 (11.8)
 
 #### 13. 공통 컴포넌트 개발시작, 필요 소켓 메시지 정리 (11.9)
+```
+소켓 메시지
+ emit
+ on
+
+[다이렉트 메시지]
+ 
+ - 입장 -
+  io.emit("user-connected" roomId, userName, userLevel, socketId)
+  io.on("connect", roomId, userName, userLevel, socketId)	
+ 
+ - 채팅 -
+ io.emit("user-direct", socketId, userName, messsage, useLevel)
+ io.on ("direct, socketId, useName, message, useLevel)
+
+
+[화상 채팅]
+
+ - 입장 -
+ io.emit("user-connected", roomId, userName, 고유id, userLevel, socketId, vedio)
+  -- 입장했을 때 내가 누군지 방안에 사람들한테 알림
+ 
+ io.emit("connected-asnwer", userName, userLevel, socketId, video)
+  -- user-connected를 받았을 시 내 비디오 상태의 유무와 내 정보를 보냄
+
+ io.on("connect", 고유id, userName, userLevel, socketId, video)
+  -- 입장 후 현재 방안에 있는 상대방의 정보를 받아오고 video가 true라면 비디오를 요청함
+
+ 
+ - 화상 캠 -
+ io.emit("user-video", roomId, 고유id, description) 
+  -- 내가 직접 화면을 켰을 때 방안의 모든 사용자에게 내 화면을 보냄
+
+ io.emit("user-answer", 고유id, description)
+  -- 신규로 방에 들어온 사람이 있다면 그 사람에게만 내 화면을 보냄
+
+ io.on("video", 고유id, description) 
+  -- 내가 상대방의 캠을 받았을 떄
+
+ - 화질 조정 -
+ io.emit("video-call", targetSocketId, videoQuality, 고유id) -- 최적화를 위한 화질조정
+
+ - peer 서버 영상 교환-
+ io.emit("user-candidate", 고유id, candidate)
+ io.on("candidate", 고유id, candidate) 
+
+ - 화상 캠채팅 -
+ io.emit("user-room", roomId, targetSocketId, userName, messsage, useLevel)
+ io.on("room", roomId, targetSocketId, useName, message, useLevel)
+
+```
+
