@@ -12,7 +12,9 @@ function RoomListPage() {
 
   return (
     <>
-      <Alert>gd</Alert>
+      <Alert variant={'confirm'} title={'방 입장'}>
+        <div>방에 입장 하시겠습니까?</div>
+      </Alert>
       {isOpenEditModal && <Modal type={'내 정보 수정'} setCloseModal={setIsOpenEditModal} />}
       <Styled.Wrapper>
         <RoomListHeader />
