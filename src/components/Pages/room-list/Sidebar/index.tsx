@@ -1,5 +1,4 @@
-import Modal from 'components/Common/Modal/Modal';
-import { userData } from 'libs/mock/user.data';
+import { userData } from '@/__mock__/user.data';
 import { useState } from 'react';
 import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';

@@ -3,7 +3,7 @@ import Modal from 'components/Common/Modal/Modal';
 import { CSSProperties, Dispatch, SetStateAction } from 'react';
 import { useSetRecoilState } from 'recoil';
 import styled from 'styled-components';
-import { flexJustifyBetween } from 'styles/common';
+import { flexJustifyBetween } from '@/libs/styles/common';
 
 type SideHeaderProps = {
   title: string;

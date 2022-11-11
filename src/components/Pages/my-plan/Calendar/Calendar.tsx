@@ -1,9 +1,9 @@
 import dayjs from 'dayjs';
-import { myplanData } from 'libs/mock/myplan.data';
 import { useCalendar } from 'hooks/Page/my-plan/useCalendar';
 import { useState } from 'react';
 import * as Styled from './Style';
 import MyPlanMemoModal from '../Modal/Memo';
+import { myplanData } from '@/__mock__/myplan.data';
 
 dayjs.locale('ko');
 function MyPlanCalendar({ date }: any) {

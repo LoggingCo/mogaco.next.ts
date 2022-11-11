@@ -1,7 +1,7 @@
-import '../styles/globals.ts';
+import '../libs/styles/globals.ts';
 import { ThemeProvider } from 'styled-components';
-import GlobalStyles from '../styles/globals';
-import theme from '../styles/theme';
+import GlobalStyles from '../libs/styles/globals';
+import theme from '../libs/styles/theme';
 import { ReactNode } from 'react';
 import './_app.css';
 import { RecoilRoot } from 'recoil';

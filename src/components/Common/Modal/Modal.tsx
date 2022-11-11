@@ -1,4 +1,4 @@
-import { ModalBackGround } from 'styles/common';
+import { ModalBackGround } from '@/libs/styles/common';
 import MyMogacoModal from './edit-info/EditInfo';
 import * as Styled from './Style';
 

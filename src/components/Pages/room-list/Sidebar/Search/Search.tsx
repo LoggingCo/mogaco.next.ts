@@ -1,4 +1,4 @@
-import { PoPularCategoryhData } from 'libs/mock/search.data';
+import { PoPularCategoryhData } from '@/__mock__/search.data';
 import { useState } from 'react';
 import * as Styled from './Style';
 

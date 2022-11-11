@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexAlignCenter, flexCenter, logoheader } from 'styles/common';
+import { flexAlignCenter, flexCenter, logoheader } from '@/libs/styles/common';
 
 export const Wrapper = styled.div`
   width: 100%;

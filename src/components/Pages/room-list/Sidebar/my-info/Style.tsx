@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexAlignEnd } from 'styles/common';
+import { flexAlignEnd } from '@/libs/styles/common';
 export const Wrapper = styled.div``;
 
 export const Container = styled.div`

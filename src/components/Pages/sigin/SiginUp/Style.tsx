@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexCenter } from 'styles/common';
+import { flexCenter } from '@/libs/styles/common';
 
 export const Wrapper = styled.div`
   ${flexCenter}

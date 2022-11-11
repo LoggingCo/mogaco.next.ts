@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { flexAlignCenter } from 'styles/common';
-import { fadein } from 'styles/keyframe';
+import { flexAlignCenter } from '@/libs/styles/common';
+import { fadein } from '@/libs/styles/keyframe';
 
 export const Wrapper = styled.div`
   position: fixed;

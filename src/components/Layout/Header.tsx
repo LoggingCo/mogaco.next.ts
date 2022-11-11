@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styled from 'styled-components';
-import { logoheader } from 'styles/common';
+import { logoheader } from '@/libs/styles/common';
 
 function LayoutHeader() {
   return (

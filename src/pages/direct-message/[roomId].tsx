@@ -3,7 +3,7 @@ import DirectMessageChat from 'components/Pages/direct-message/Chat/Chat';
 import DirectMessageUserList from 'components/Pages/direct-message/UserList/UserList';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
-import { flexCenter } from 'styles/common';
+import { flexCenter } from '@/libs/styles/common';
 
 function DirectMessagePage() {
   return (

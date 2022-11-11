@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import { flexAlignCenter } from 'styles/common';
-import { media } from 'styles/media';
+import { flexAlignCenter } from '@/libs/styles/common';
+import { media } from '@/libs/styles/media';
 
 type CalenderStyleProps = {
   isMonth: boolean;

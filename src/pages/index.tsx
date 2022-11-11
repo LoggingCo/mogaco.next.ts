@@ -2,8 +2,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import styled, { keyframes } from 'styled-components';
-import { flexCenter, logoheader } from '../styles/common';
-import { desktopM } from '../styles/media';
+import { flexCenter, logoheader } from '../libs/styles/common';
+import { desktopM } from '../libs/styles/media';
 import Typist from 'react-typist';
 import LayoutHeader from 'components/Layout/Header';
 

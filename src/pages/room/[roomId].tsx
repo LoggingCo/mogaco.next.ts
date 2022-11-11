@@ -3,7 +3,7 @@ import RoomFullVideoModal from 'components/Pages/room/Modal/Full';
 import RoomSidebar from 'components/Pages/room/Sidebar';
 import RoomVideoList from 'components/Pages/room/VideoList';
 import styled from 'styled-components';
-import { flexAlignCenter } from 'styles/common';
+import { flexAlignCenter } from '@/libs/styles/common';
 
 function MogacoRoomPage() {
   return (

@@ -3,7 +3,7 @@ import { parseLevel } from 'libs/utils/parseLevel';
 import * as Styled from './Style';
 import { useMedia } from 'hooks/Common/useMedia';
 import DirectMessageUser from './User/User';
-import { DirectUser } from 'libs/mock/direct.data';
+import { DirectUser } from '@/__mock__/direct.data';
 
 function DirectMessageUserList() {
   const { isMobile } = useMedia();

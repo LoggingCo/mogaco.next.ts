@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { flexAlignCenter, flexCenter } from 'styles/common';
+import { flexAlignCenter, flexCenter } from '@/libs/styles/common';
 
 export const Wrapper = styled.div`
   position: fixed;

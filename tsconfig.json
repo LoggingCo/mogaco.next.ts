@@ -15,8 +15,16 @@
     "jsx": "preserve",
     "incremental": true,
 
-    "baseUrl": "src"
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@pages/*": ["pages/*"],
+      "@components/*": ["components/*"],
+      "@utils/*": ["libs/utils/*"],
+      "@hooks/*": ["hooks/*"],
+      "@types/*": ["types/*"]
+    }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.setup.js", "jest.config.js"],
   "exclude": ["node_modules"]
 }

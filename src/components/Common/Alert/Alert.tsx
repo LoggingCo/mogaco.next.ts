@@ -1,5 +1,4 @@
 import React, { FC } from 'react';
-import { useSetRecoilState } from 'recoil';
 import * as Styled from './Style';
 
 export interface AlertProps {

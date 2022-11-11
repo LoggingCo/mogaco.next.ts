@@ -1,5 +1,5 @@
 import { useMediaQuery } from 'react-responsive';
-import { desktopS, mobileL, tablet } from 'styles/media';
+import { desktopS, mobileL, tablet } from '@/libs/styles/media';
 
 type useMediaHook = {
   isPc: boolean;
