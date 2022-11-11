@@ -1,4 +1,4 @@
-import { editModal } from 'atom/modal/atoms';
+import { editModal } from '@/atom/modal/atoms';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useSetRecoilState } from 'recoil';

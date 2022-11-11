@@ -1,5 +1,4 @@
-import { editModal } from 'atom/modal/atoms';
-import Modal from 'components/Common/Modal/Modal';
+import { editModal } from '@/atom/modal/atoms';
 import { CSSProperties, Dispatch, SetStateAction } from 'react';
 import { useSetRecoilState } from 'recoil';
 import styled from 'styled-components';

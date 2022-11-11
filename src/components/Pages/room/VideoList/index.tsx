@@ -1,5 +1,5 @@
-import { roomUser } from 'atom/room/atoms';
-import { division } from 'libs/utils/division';
+import { roomUser } from '@/atom/room/atoms';
+import { division } from '@/libs/utils/division';
 import { useEffect, useState } from 'react';
 import { useRecoilValue } from 'recoil';
 import * as Styled from './Style';

@@ -1,4 +1,4 @@
-import { fullVideoModal } from 'atom/modal/atoms';
+import { fullVideoModal } from '@/atom/modal/atoms';
 import { useEffect, useRef } from 'react';
 import { useRecoilState } from 'recoil';
 import * as Styled from './Style';

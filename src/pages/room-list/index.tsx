@@ -1,9 +1,9 @@
-import { editModal } from 'atom/modal/atoms';
-import Alert from 'components/Common/Alert/Alert';
-import Modal from 'components/Common/Modal/Modal';
-import RoomListHeader from 'components/Pages/room-list/Header/Header';
-import RoomCardList from 'components/Pages/room-list/RoomList/List';
-import RoomListSidebar from 'components/Pages/room-list/Sidebar';
+import { editModal } from '@/atom/modal/atoms';
+import Alert from '@/components/Common/Alert/Alert';
+import Modal from '@/components/Common/Modal/Modal';
+import RoomListHeader from '@/components/Pages/room-list/Header/Header';
+import RoomCardList from '@/components/Pages/room-list/RoomList/List';
+import RoomListSidebar from '@/components/Pages/room-list/Sidebar';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 

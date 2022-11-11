@@ -1,4 +1,4 @@
-import LayoutHeader from 'components/Layout/Header';
+import LayoutHeader from '@/components/Layout/Header';
 import { useState } from 'react';
 import RoomListHeadeSibebar from './Sidebar/Sildebar';
 import * as Styled from './Style';

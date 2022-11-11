@@ -1,6 +1,6 @@
-import LayoutHeader from 'components/Layout/Header';
-import SignLogin from 'components/Pages/sigin/Login/Login';
-import SignSignUp from 'components/Pages/sigin/SiginUp/SiginUp';
+import LayoutHeader from '@/components/Layout/Header';
+import SignLogin from '@/components/Pages/sigin/Login/Login';
+import SignSignUp from '@/components/Pages/sigin/SiginUp/SiginUp';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { flexCenter, logoheader } from '@/libs/styles/common';

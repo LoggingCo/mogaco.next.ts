@@ -1,4 +1,4 @@
-import { fullVideoModal } from 'atom/modal/atoms';
+import { fullVideoModal } from '@/atom/modal/atoms';
 import { useRecoilState } from 'recoil';
 import FullRoomChat from './Chat/Chat';
 import * as Styled from './Style';
