@@ -93,3 +93,8 @@
 ```
 
 #### 14. Mock API를 위한 nextJS API Route 작성, 유닛 테스트를 위한 라이브러리 설치 (11.10)
+#### 15. 각 페이지 HOC 구현 및 로그인, 로그아웃 기능 구현
+```
+TEST ID : 'test'
+TEST PW : 'test'
+```
