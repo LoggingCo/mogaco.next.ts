@@ -9,6 +9,20 @@ TEST ID : 'test'
 TEST PW : 'test'
 ```
 
+## 개발 순서
+
+#### 1. 페이지 퍼블리싱 (o)
+#### 2. 온프레미스 docker 셋팅 api 서버 및 소켓 서버 준비 (o)
+#### 2. mock data, mock api, hoc (o)
+#### 3. TDD testcode 작성 (...ing) 
+#### 4. focs 해결, varcel 유료계정, mock API기반 CI 준비
+#### 5. Circle CI를 통한 CI 적용
+#### 5. test 코드를 기반으로 한 mockAPI 연결
+#### 6. 백엔드 api 및 소켓 메시지 개발 
+#### 7. 백엔드 api 서버 및 소켓 서버 온프레미스 환경에서 https 배포
+#### 8. 소켓 서버 기반 https 환경에서 stream peerconnection
+#### 9. 소켓 채팅 및 실제 api 서버와 프론트엔드 http message 교환
+
 ## 개발 진행 이슈
 
 #### next v13 (10.29)
