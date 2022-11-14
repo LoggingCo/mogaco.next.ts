@@ -9,7 +9,7 @@ export const withAuth = (WrappedComponent: any) => {
       const Router = useRouter();
       const accessToken = TokenRepository.getToken();
       if (!accessToken) {
-        Router.replace('/');
+        Router.replace('/sign');
         return null;
       }
 
