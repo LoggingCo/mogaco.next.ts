@@ -4,6 +4,7 @@ import RoomSidebar from 'components/Pages/room/Sidebar';
 import RoomVideoList from 'components/Pages/room/VideoList';
 import styled from 'styled-components';
 import { flexAlignCenter } from '@/libs/styles/common';
+import { withAuth } from '@/libs/utils/hoc';
 
 function MogacoRoomPage() {
   return (
@@ -21,7 +22,7 @@ function MogacoRoomPage() {
     </Styled.Wrapper>
   );
 }
-export default MogacoRoomPage;
+export default withAuth(MogacoRoomPage);
 
 const Wrapper = styled.div`
   min-width: 1440px;

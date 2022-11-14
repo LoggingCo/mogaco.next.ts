@@ -4,6 +4,7 @@ import SignSignUp from '@/components/Pages/sigin/SiginUp/SiginUp';
 import { useState } from 'react';
 import styled from 'styled-components';
 import { flexCenter, logoheader } from '@/libs/styles/common';
+import { withOutAuth } from '@/libs/utils/hoc';
 
 function SignPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -30,7 +31,7 @@ function SignPage() {
     </Styled.Wraaper>
   );
 }
-export default SignPage;
+export default withOutAuth(SignPage);
 
 const Wraaper = styled.div`
   display: flex;

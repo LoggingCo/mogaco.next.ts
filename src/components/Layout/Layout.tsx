@@ -1,8 +1,16 @@
+import TokenRepository from '@/repository/TokenRepository';
+import UserRepository from '@/repository/UserRepositroy';
+import axios from 'axios';
 import Link from 'next/link';
+import { ReactElement, useEffect } from 'react';
 import LogOutBtn from './Logout/LogoutBtn';
 import * as Styled from './Style';
 
-function Layout({ children }: any) {
+interface LayoutProps {
+  children: ReactElement;
+}
+
+function Layout({ children }: LayoutProps) {
   return (
     <>
       <Styled.Header>

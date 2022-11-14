@@ -1,3 +1,4 @@
+import { withAuth } from '@/libs/utils/hoc';
 import Layout from 'components/Layout/Layout';
 import MyPlanCalendar from 'components/Pages/my-plan/Calendar/Calendar';
 import MyPlanSidebar from 'components/Pages/my-plan/Sidebar/Sidebar';
@@ -21,7 +22,7 @@ MyPlanPage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default MyPlanPage;
+export default withAuth(MyPlanPage);
 
 const Wrapper = styled.div`
   width: 100%;

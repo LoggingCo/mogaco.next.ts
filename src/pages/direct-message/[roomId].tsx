@@ -4,6 +4,7 @@ import DirectMessageUserList from 'components/Pages/direct-message/UserList/User
 import { ReactElement } from 'react';
 import styled from 'styled-components';
 import { flexCenter } from '@/libs/styles/common';
+import { withAuth } from '@/libs/utils/hoc';
 
 function DirectMessagePage() {
   return (
@@ -20,7 +21,7 @@ DirectMessagePage.getLayout = function getLayout(page: ReactElement) {
   return <Layout>{page}</Layout>;
 };
 
-export default DirectMessagePage;
+export default withAuth(DirectMessagePage);
 
 const Wrapper = styled.div`
   ${flexCenter};
