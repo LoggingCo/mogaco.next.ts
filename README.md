@@ -13,15 +13,18 @@ TEST PW : 'test'
 
 #### 1. 페이지 퍼블리싱 (o)
 #### 2. 온프레미스 docker 셋팅 api 서버 및 소켓 서버 준비 (o)
-#### 2. mock data, mock api, hoc (o)
-#### 3. TDD testcode 작성 (...ing) 
-#### 4. focs 해결, varcel 유료계정, mock API기반 CI 준비
-#### 5. Circle CI를 통한 CI 적용
-#### 5. test 코드를 기반으로 한 mockAPI 연결
-#### 6. 백엔드 api 및 소켓 메시지 개발 (...ing) 
-#### 7. 백엔드 api 서버 및 소켓 서버 온프레미스 환경에서 https 배포
-#### 8. 소켓 서버 기반 https 환경에서 stream peerconnection
-#### 9. 소켓 채팅 및 실제 api 서버와 프론트엔드 http message 교환
+#### 3. mock data, msw를 활용 api 목킹, hoc (...ing)
+#### 4. storybook 적용 및 msw, storybook 연동
+#### 5. 유닛 테스트 단위 페이지 랜더링 확인 및 유틸 함수 test code 작성
+#### 6. api목킹을 활용한 통합테스트 TDD testcode 작성
+#### 7. focs 해결, varcel 유료계정, mock API기반 CI 준비
+#### 8. Circle CI를 통한 CI 적용
+#### 9. test 코드를 기반으로 한 mockAPI 연결
+#### 10. 백엔드 api 및 소켓 메시지 개발 (...ing) 
+#### 11. 백엔드 api 서버 및 소켓 서버 온프레미스 환경에서 https 배포
+#### 12. 소켓 서버 기반 https 환경에서 stream peerconnection
+#### 13. 소켓 채팅 및 실제 api 서버와 프론트엔드 http message 교환
+#### 14. cypress를 활용한 e2e 테스트 작성
 
 ## 개발 진행 이슈
 
@@ -110,11 +113,12 @@ TEST PW : 'test'
 
 ```
 
-#### 14. Mock API를 위한 nextJS API Route 작성, 유닛 테스트를 위한 라이브러리 설치 (11.10)
+#### 14. api 목킹을 위한 msw 및 , 유닛 테스트를 위한 라이브러리 설치 (11.10)
 #### 15. 각 페이지 HOC 구현 및 로그인, 로그아웃 기능 구현 (11.14)
 ```
 TEST ID : 'test'
 TEST PW : 'test'
 ```
-#### 16. 테스트 코드 확인 완료 TDD 코드 작성 시작 (11.14)
+
+#### 16. msw mock api를 활용한 TDD 코드 작성 (11.14)
 
