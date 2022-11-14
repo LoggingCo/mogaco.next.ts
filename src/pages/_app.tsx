@@ -9,9 +9,11 @@ import initMockAPI from '@/__mock__';
 
 function MyApp({ Component, pageProps }: any) {
   const getLayout = Component.getLayout || ((page: ReactNode) => page);
-  if (process.env.NODE_ENV === 'development') {
-    initMockAPI();
-  }
+  // if (process.env.NODE_ENV === 'development') {
+  //   initMockAPI();
+  // }
+  initMockAPI();
+  // mock 데이터 배포 환경 테스트를 위한 모든 환경에서 실행
 
   return (
     <ThemeProvider theme={theme}>
