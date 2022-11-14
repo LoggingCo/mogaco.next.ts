@@ -18,7 +18,7 @@ TEST PW : 'test'
 #### 4. focs 해결, varcel 유료계정, mock API기반 CI 준비
 #### 5. Circle CI를 통한 CI 적용
 #### 5. test 코드를 기반으로 한 mockAPI 연결
-#### 6. 백엔드 api 및 소켓 메시지 개발 
+#### 6. 백엔드 api 및 소켓 메시지 개발 (...ing) 
 #### 7. 백엔드 api 서버 및 소켓 서버 온프레미스 환경에서 https 배포
 #### 8. 소켓 서버 기반 https 환경에서 stream peerconnection
 #### 9. 소켓 채팅 및 실제 api 서버와 프론트엔드 http message 교환
