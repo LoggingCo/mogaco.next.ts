@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import { useRouter } from 'next/router';
+import LogOutBtn from './Logout/LogoutBtn';
 import * as Styled from './Style';
 
 function Layout({ children }: any) {
-  const { pathname } = useRouter();
-
   return (
     <>
       <Styled.Header>
@@ -13,6 +11,7 @@ function Layout({ children }: any) {
             <Styled.Logo>Mogaco</Styled.Logo>
           </a>
         </Link>
+        <LogOutBtn />
       </Styled.Header>
       {children}
     </>
