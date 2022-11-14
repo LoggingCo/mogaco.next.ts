@@ -1,4 +1,4 @@
-import { roomChat } from '@/__mock__/room.data';
+import { roomChat } from '@mocks/data/room.data';
 import { useChatList } from 'hooks/Page/room/useChatList';
 import { useEffect, useRef, useState } from 'react';
 import RoomChatFrom from './ChatFrom/ChatFrom';

@@ -4,6 +4,7 @@
 - 또한 오늘 했던 일들을 플래터의 캘린더 기능을 통해 메모, 목표 설정 및 학습량 등을 모두 체크할 수 있습니다. <br/>
 - 기획 디자인 퍼블리싱 서버 인프라 a~z까지 혼자서 구현중인 프로젝트 <br/>
   <a href="https://mogaco.vercel.app/">개발현황미리보기</a>
+
 ```
 TEST ID : 'test'
 TEST PW : 'test'
@@ -113,12 +114,22 @@ TEST PW : 'test'
 
 ```
 
+<<<<<<< HEAD
 #### 14. api 목킹을 위한 msw 및 , 유닛 테스트를 위한 라이브러리 설치 (11.10)
+=======
+#### 14. Mock API를 위한 nextJS API Route 작성, 유닛 테스트를 위한 라이브러리 설치 (11.10)
+
+>>>>>>> 079806f (feat: sign-up, sigin-in, logout TDD)
 #### 15. 각 페이지 HOC 구현 및 로그인, 로그아웃 기능 구현 (11.14)
+
 ```
 TEST ID : 'test'
 TEST PW : 'test'
 ```
 
+<<<<<<< HEAD
 #### 16. msw mock api를 활용한 TDD 코드 작성 (11.14)
 
+=======
+#### 16. 인증관련 부분부터 TDD 시작 (테스트 코드 작성) (11.15)
+>>>>>>> 079806f (feat: sign-up, sigin-in, logout TDD)

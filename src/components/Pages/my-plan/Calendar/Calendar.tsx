@@ -3,7 +3,7 @@ import { useCalendar } from 'hooks/Page/my-plan/useCalendar';
 import { useState } from 'react';
 import * as Styled from './Style';
 import MyPlanMemoModal from '../Modal/Memo';
-import { myplanData } from '@/__mock__/myplan.data';
+import { myplanData } from '@mocks/data/myplan.data';
 
 dayjs.locale('ko');
 function MyPlanCalendar({ date }: any) {

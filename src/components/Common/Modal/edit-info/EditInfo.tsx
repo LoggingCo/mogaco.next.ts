@@ -1,4 +1,4 @@
-import { userEditinfo } from '@/__mock__/user.data';
+import { userEditinfo } from '@mocks/data/user.data';
 import { useState } from 'react';
 import EditModalMogaco from './Mogaco/Mogaco';
 import * as Styled from './Style';

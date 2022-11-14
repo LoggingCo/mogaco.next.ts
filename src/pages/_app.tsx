@@ -5,9 +5,13 @@ import theme from '../libs/styles/theme';
 import { ReactNode } from 'react';
 import './_app.css';
 import { RecoilRoot } from 'recoil';
+import initMockAPI from '@/__mock__';
 
 function MyApp({ Component, pageProps }: any) {
   const getLayout = Component.getLayout || ((page: ReactNode) => page);
+  if (process.env.NODE_ENV === 'development') {
+    initMockAPI();
+  }
 
   return (
     <ThemeProvider theme={theme}>

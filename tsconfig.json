@@ -23,7 +23,8 @@
       "@utils/*": ["libs/utils/*"],
       "@hooks/*": ["hooks/*"],
       "@atom/*": ["atom/*"],
-      "@types/*": ["types/*"]
+      "@types/*": ["types/*"],
+      "@mocks/*": ["__mock__/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.setup.js", "jest.config.js"],

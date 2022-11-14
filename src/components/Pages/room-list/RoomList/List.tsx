@@ -2,7 +2,7 @@ import { useState } from 'react';
 import RoomCard from './Card/Card';
 import SkeletonCard from '../SkeletonCard/Skelton';
 import * as Styled from './Style';
-import { RoomListData } from '@/__mock__/roomList.data';
+import { RoomListData } from '@mocks/data/roomList.data';
 
 function RoomCardList() {
   const [roomList, setRoomList] = useState(RoomListData);

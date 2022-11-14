@@ -24,11 +24,10 @@ function SignLogin() {
       .post('/api/user/login', { email, password })
       .then((res) => {
         if (res.status === 200) {
-          console.log(res.data);
-          TokenRepository.setToken(res.data.data.token);
+          TokenRepository.setToken(res.data.token);
           UserRepository.setUser({
-            name: res.data.data.name,
-            level: res.data.data.level,
+            name: res.data.name,
+            level: res.data.level,
           });
           router.push('/room-list');
         }
@@ -42,11 +41,16 @@ function SignLogin() {
     <Styeld.Wrapper>
       <Styeld.Form onSubmit={onSubmit}>
         <Styeld.InputBox>
-          <input name={'email'} onChange={onChangeForm} />
+          <input name={'email'} onChange={onChangeForm} placeholder={'이메일 입력하세요'} />
           <span>이메일</span>
         </Styeld.InputBox>
         <Styeld.InputBox>
-          <input name={'password'} type="password" onChange={onChangeForm} />
+          <input
+            name={'password'}
+            type="password"
+            onChange={onChangeForm}
+            placeholder={'비밀번호를 입력하세요'}
+          />
           <span>비밀번호</span>
         </Styeld.InputBox>
         <button>로그인</button>

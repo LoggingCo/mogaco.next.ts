@@ -11,24 +11,19 @@ function LogOutBtn() {
   const router = useRouter();
 
   const onLogout = () => {
-    axios
-      .post('api/user/logout')
-      .then((res) => {
-        if (res.status === 200) {
-          TokenRepository.removeToken();
-          UserRepository.removeUser();
-          setIsLogin(false);
+    axios.post('/api/user/logout').then((res) => {
+      if (res.status === 200) {
+        TokenRepository.removeToken();
+        UserRepository.removeUser();
+        setIsLogin(false);
 
-          const { pathname } = router;
-          if (pathname === '/room-list') {
-            return router.reload();
-          }
-          router.push('/room-list');
+        const { pathname } = router;
+        if (pathname === '/room-list') {
+          return router.reload();
         }
-      })
-      .catch((err) => {
-        new ApiError(err.response.data.message, err.response);
-      });
+        router.push('/room-list');
+      }
+    });
   };
 
   useEffect(() => {

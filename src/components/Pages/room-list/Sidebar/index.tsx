@@ -1,5 +1,5 @@
 import TokenRepository from '@/repository/TokenRepository';
-import { userData } from '@/__mock__/user.data';
+import { userData } from '@mocks/data/user.data';
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import SideMonthlyRank from './monthly-rank/Montly';

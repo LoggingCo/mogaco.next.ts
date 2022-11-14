@@ -2,7 +2,7 @@ import { useState } from 'react';
 import RoomSidebarChannel from './Channel';
 import RoomSidebarUserList from './UserList';
 import * as Styled from './Style';
-import { roomData } from '@/__mock__/room.data';
+import { roomData } from '@mocks/data/room.data';
 
 function RoomSidebar() {
   const [roomInfo, setRoomInfo] = useState(roomData);

@@ -4,7 +4,7 @@ import MyPlanSideInfo from './Info/Info';
 import MyPlanSideMogaco from './Mogaco/Mogaco';
 import MyPlanSideTodo from './Todo/Todo';
 import styled from 'styled-components';
-import { userPlanData } from '@/__mock__/user.data';
+import { userPlanData } from '@mocks/data/user.data';
 
 function MyPlanSidebar({ date, setDate }: any) {
   const [myinfo, setMyinfo] = useState<any>(userPlanData);

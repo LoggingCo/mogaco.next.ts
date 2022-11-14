@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import * as Styled from './Style';
 import { useMedia } from '@/hooks/Common/useMedia';
 import DirectMessageUser from './User/User';
-import { DirectUser } from '@/__mock__/direct.data';
+import { DirectUser } from '@mocks/data/direct.data';
 
 function DirectMessageUserList() {
   const { isMobile } = useMedia();

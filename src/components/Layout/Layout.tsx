@@ -1,6 +1,3 @@
-import TokenRepository from '@/repository/TokenRepository';
-import UserRepository from '@/repository/UserRepositroy';
-import axios from 'axios';
 import Link from 'next/link';
 import { ReactElement, useEffect } from 'react';
 import LogOutBtn from './Logout/LogoutBtn';

@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { DirectData } from '@/__mock__/direct.data';
+import { DirectData } from '@mocks/data/direct.data';
 import { useEffect, useRef, useState } from 'react';
 import DirectMessageChatFrom from './ChatFrom/ChatFrom';
 import DirectMessageChatTo from './ChatTo/ChatTo';
