@@ -114,22 +114,10 @@ TEST PW : 'test'
 
 ```
 
-<<<<<<< HEAD
 #### 14. api 목킹을 위한 msw 및 , 유닛 테스트를 위한 라이브러리 설치 (11.10)
-=======
-#### 14. Mock API를 위한 nextJS API Route 작성, 유닛 테스트를 위한 라이브러리 설치 (11.10)
-
->>>>>>> 079806f (feat: sign-up, sigin-in, logout TDD)
 #### 15. 각 페이지 HOC 구현 및 로그인, 로그아웃 기능 구현 (11.14)
-
 ```
 TEST ID : 'test'
 TEST PW : 'test'
-```
-
-<<<<<<< HEAD
+``
 #### 16. msw mock api를 활용한 TDD 코드 작성 (11.14)
-
-=======
-#### 16. 인증관련 부분부터 TDD 시작 (테스트 코드 작성) (11.15)
->>>>>>> 079806f (feat: sign-up, sigin-in, logout TDD)
