@@ -18,5 +18,10 @@ export const mogacoOut = rest.delete('/api/plan/user', async (req, res, ctx) => 
 
 // kick mogaco
 export const mogacoKick = rest.delete('/api/plan/user', async (req, res, ctx) => {
-  return res(ctx.status(200), ctx.json({ message: '모가코 강퇴 성공' }));
+  let userId;
+  await req.json().then((data) => {
+    userId = data.userId;
+  });
+
+  return res(ctx.status(200), ctx.json({ userId }));
 });

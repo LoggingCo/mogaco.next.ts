@@ -1,5 +1,5 @@
 export const userData = {
-  user: { name: '중급뵹아리', day: 256, continue: 14, total: 192, mogaco: 3 },
+  user: { name: '중급뵹아리', day: 256, continue: 14, total: 192, mogaco: 3, level: 3 },
   mogaco: [
     { name: '모여라ㅏㅏㅏ친구들', week: 6, total: 192 },
     { name: '퇴근 후 스터디', week: 12, total: 256 },

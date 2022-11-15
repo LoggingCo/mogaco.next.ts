@@ -50,10 +50,12 @@ export const Categroy = styled.div`
   margin: 20px 0;
 
   & span {
-    margin: 0 4px;
+    display: inline-block;
+    margin: 4px;
     border-radius: 8px;
     font-size: 12px;
-    padding: 0.3rem;
+    padding: 8px;
+    padding-left: 10px;
     background-color: ${({ theme }) => theme.palette.gray[300]};
     color: ${({ theme }) => theme.palette.fontSubColor};
     cursor: pointer;

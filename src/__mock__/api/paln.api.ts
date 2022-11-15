@@ -63,15 +63,55 @@ export const planUpdateTodo = rest.put('/api/plan/todo', async (req, res, ctx) =
 
 // post memo
 export const planPostMemo = rest.post('/api/plan/memo', async (req, res, ctx) => {
-  return res(ctx.status(200), ctx.json(userData));
+  let title;
+  let subtitle;
+  let memo;
+  await req.json().then((data) => {
+    title = data.title;
+    subtitle = data.subtitle;
+    memo = data.memo;
+  });
+
+  const data = {
+    id: Math.floor(Math.random() * 1000),
+    title,
+    subtitle,
+    memo,
+    user: userData.user,
+  };
+
+  return res(ctx.status(200), ctx.json(data));
 });
 
 // update memo
 export const planUpdateMemo = rest.put('/api/plan/memo', async (req, res, ctx) => {
-  return res(ctx.status(200), ctx.json(userData));
+  let title;
+  let subtitle;
+  let memo;
+  await req.json().then((data) => {
+    title = data.title;
+    subtitle = data.subtitle;
+    memo = data.memo;
+  });
+
+  const data = {
+    id: Math.floor(Math.random() * 1000),
+    title,
+    subtitle,
+    memo,
+    user: userData.user,
+  };
+
+  return res(ctx.status(200), ctx.json(data));
 });
 
 // delete memo
 export const planDeleteMemo = rest.delete('/api/plan/memo', async (req, res, ctx) => {
-  return res(ctx.status(200), ctx.json(userData));
+  let memoId;
+
+  await req.json().then((data) => {
+    memoId = data.memoId;
+  });
+
+  return res(ctx.status(200), ctx.json({ memoId }));
 });

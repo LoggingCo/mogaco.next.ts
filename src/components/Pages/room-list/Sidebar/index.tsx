@@ -38,6 +38,7 @@ export default RoomListSidebar;
 
 const Wrapper = styled.div`
   min-width: 330px;
+  max-width: 330px;
   height: 100vh;
   overflow: scroll;
   position: sticky;

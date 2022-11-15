@@ -22,7 +22,7 @@ const TagRepository = {
       if (existTag) return;
 
       // 기존 로컬 스토리지에 저장된 태그 배열의 길이가 5라면 마지막 태그를 삭제하고 새로운 태그를 추가
-      if (tagStoreage.length === 5) {
+      if (tagStoreage.length === 8) {
         const tagStoreage_copy = [...tagStoreage];
         tagStoreage_copy.pop();
         tagStoreage_copy.unshift(tag);
