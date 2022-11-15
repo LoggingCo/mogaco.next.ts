@@ -11,16 +11,14 @@ function MyPlanPage() {
   const [date, setDate] = useState<Dayjs>(dayjs());
 
   return (
-    <Styled.Wrapper>
-      <MyPlanSidebar date={date} setDate={setDate} />
-      <MyPlanCalendar date={date} />
-    </Styled.Wrapper>
+    <Layout>
+      <Styled.Wrapper>
+        <MyPlanSidebar date={date} setDate={setDate} />
+        <MyPlanCalendar date={date} />
+      </Styled.Wrapper>
+    </Layout>
   );
 }
-
-MyPlanPage.getLayout = function getLayout(page: ReactElement) {
-  return <Layout>{page}</Layout>;
-};
 
 export default withAuth(MyPlanPage);
 

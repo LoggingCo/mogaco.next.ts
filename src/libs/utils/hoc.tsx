@@ -1,37 +1,40 @@
 // HOC/withAuth.jsx
 import TokenRepository from '@/repository/TokenRepository';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 
 export const withAuth = (WrappedComponent: any) => {
   return (props: any) => {
     // checks whether we are on client / browser or server.
-    if (typeof window !== 'undefined') {
-      const Router = useRouter();
-      const accessToken = TokenRepository.getToken();
-      if (!accessToken) {
-        Router.replace('/sign');
-        return null;
-      }
+    const router = useRouter();
 
-      return <WrappedComponent {...props} />;
-    }
-    return null;
+    const [isLogin, setIsLogin] = useState(false);
+
+    useEffect(() => {
+      if (TokenRepository.getToken()) {
+        setIsLogin(true);
+      } else {
+        router.replace('/sign');
+      }
+    }, []);
+
+    return isLogin ? <WrappedComponent {...props} /> : null;
   };
 };
 
 export const withOutAuth = (WrappedComponent: any) => {
   return (props: any) => {
-    // checks whether we are on client / browser or server.
-    if (typeof window !== 'undefined') {
-      const Router = useRouter();
-      const accessToken = TokenRepository.getToken();
-      if (accessToken) {
-        Router.replace('/');
-        return null;
-      }
+    const router = useRouter();
+    const [isLogin, setIsLogin] = useState(true);
 
-      return <WrappedComponent {...props} />;
-    }
-    return null;
+    useEffect(() => {
+      if (TokenRepository.getToken()) {
+        router.replace('/');
+      } else {
+        setIsLogin(false);
+      }
+    }, []);
+
+    return isLogin ? null : <WrappedComponent {...props} />;
   };
 };

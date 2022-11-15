@@ -4,7 +4,6 @@ import Modal from '@/components/Common/Modal/Modal';
 import RoomListHeader from '@/components/Pages/room-list/Header/Header';
 import RoomCardList from '@/components/Pages/room-list/RoomList/List';
 import RoomListSidebar from '@/components/Pages/room-list/Sidebar';
-import { withAuth } from '@/libs/utils/hoc';
 import { useRecoilState } from 'recoil';
 import styled from 'styled-components';
 

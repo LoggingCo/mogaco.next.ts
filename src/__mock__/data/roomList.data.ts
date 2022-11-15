@@ -300,3 +300,5 @@ export const RoomListData = [
     private: false,
   },
 ];
+
+export const PoPularTag = [];
