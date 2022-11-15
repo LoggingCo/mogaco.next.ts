@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home /> renders a heading 1`] = `
+<div>
+  <div
+    class="sc-hLBbgP eFmqOR"
+  >
+    <div
+      class="sc-dkrFOg jcNiDM"
+    >
+      <a
+        href="/"
+      >
+        mogaco
+      </a>
+    </div>
+    <div
+      class="sc-eDvSVe kjKcFA"
+    >
+      Mogaco 
+      {
+      <div
+        class="Typist "
+      >
+        <span
+          class="Cursor Cursor--blinking"
+        >
+          |
+        </span>
+      </div>
+      }
+      <button>
+        go
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Home /> 홈페이지가 렌더링 되고 스냅샷을 비교한다 1`] = `
+<div>
+  <div
+    class="sc-hLBbgP eFmqOR"
+  >
+    <div
+      class="sc-dkrFOg jcNiDM"
+    >
+      <a
+        href="/"
+      >
+        mogaco
+      </a>
+    </div>
+    <div
+      class="sc-eDvSVe kjKcFA"
+    >
+      Mogaco 
+      {
+      <div
+        class="Typist "
+      >
+        <span
+          class="Cursor Cursor--blinking"
+        >
+          |
+        </span>
+      </div>
+      }
+      <button>
+        go
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<Home /> 홈페이지가 렌더링 된다 1`] = `
+<div>
+  <div
+    class="sc-hLBbgP eFmqOR"
+  >
+    <div
+      class="sc-dkrFOg jcNiDM"
+    >
+      <a
+        href="/"
+      >
+        mogaco
+      </a>
+    </div>
+    <div
+      class="sc-eDvSVe kjKcFA"
+    >
+      Mogaco 
+      {
+      <div
+        class="Typist "
+      >
+        <span
+          class="Cursor Cursor--blinking"
+        >
+          |
+        </span>
+      </div>
+      }
+      <button>
+        go
+      </button>
+    </div>
+  </div>
+</div>
+`;

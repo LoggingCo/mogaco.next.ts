@@ -1,6 +1,5 @@
-import { useTimer } from 'hooks/Page/room/useTimer';
-import { parseTimer } from 'libs/utils/parseTimer';
-import { useEffect, useState } from 'react';
+import { useTimer } from '@hooks/Page/room/useTimer';
+import { parseTimer } from '@libs/utils/parseTimer';
 import * as Styled from './Stlye';
 
 function RoomTimer() {

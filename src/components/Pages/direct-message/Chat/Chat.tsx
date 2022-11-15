@@ -13,7 +13,8 @@ function DirectMessageChat() {
   const lastchatRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    lastchatRef.current?.scrollIntoView();
+    if (process.env.NODE_ENV === 'test') return;
+    lastchatRef.current!.scrollIntoView();
   }, []);
 
   return (

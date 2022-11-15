@@ -22,8 +22,12 @@ function SignPage() {
       <Styled.Main>
         <Styled.MainHeader>
           <ul>
-            <li onClick={() => setIsLogin(true)}>로그인</li>
-            <li onClick={() => setIsLogin(false)}>회원가입</li>
+            <li onClick={() => setIsLogin(true)} role="sign-in">
+              로그인
+            </li>
+            <li onClick={() => setIsLogin(false)} role="sign-up">
+              회원가입
+            </li>
           </ul>
         </Styled.MainHeader>
         {isLogin ? <SignLogin /> : <SignSignUp />}

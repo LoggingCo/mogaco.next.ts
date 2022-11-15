@@ -22,8 +22,8 @@ function MyPlanSideTodo({ todo }: any) {
       )}
       <Styled.Content>
         <ul>
-          {todo.map((todo: any) => (
-            <li key={todo.id}>
+          {todo.map((todo: any, index: number) => (
+            <li key={index}>
               <Styled.TodoState state={todo.state}></Styled.TodoState>
               <Styled.TodoList state={todo.state}>{todo.todo}</Styled.TodoList>
             </li>

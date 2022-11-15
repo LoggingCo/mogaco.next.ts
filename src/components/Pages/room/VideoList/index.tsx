@@ -29,7 +29,9 @@ function RoomVideoList() {
     <Styled.Wrapper>
       {index > 0 && <button onClick={onClickPrev}>PREV</button>}
       {divisonUserList.length > 0 &&
-        divisonUserList[index].map((user: any) => <RoomVideo user={user} />)}
+        divisonUserList[index].map((user: any, index: number) => (
+          <RoomVideo user={user} key={index} />
+        ))}
       {index < divisonUserList.length - 1 && <button onClick={onClickNext}>NEXT</button>}
     </Styled.Wrapper>
   );

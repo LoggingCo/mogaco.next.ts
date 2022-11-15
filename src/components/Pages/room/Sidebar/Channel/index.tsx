@@ -1,4 +1,4 @@
-import { parseLevel } from 'libs/utils/parseLevel';
+import { parseLevel } from '@libs/utils/parseLevel';
 import { useState } from 'react';
 import * as Styled from './Style';
 function RoomSidebarChannel({ channelList, master }: any) {
@@ -28,21 +28,21 @@ function RoomSidebarChannel({ channelList, master }: any) {
       </Styled.Header>
       <Styled.Container>
         <Styled.ChannlList>
-          {channelList.map((channel: any) => (
-            <>
+          {channelList.map((channel: any, index: number) => (
+            <div key={index}>
               <Styled.ChannlItem>
                 # {channel.name}
                 {channel.primary === false && <span>x</span>}
               </Styled.ChannlItem>
               <Styled.UserList>
                 {channel.primary === false &&
-                  userList.map((user: any) => (
-                    <Styled.UserItem>
+                  userList.map((user: any, index: number) => (
+                    <Styled.UserItem key={index}>
                       <span>{parseLevel(user.level)}</span> {user.name}
                     </Styled.UserItem>
                   ))}
               </Styled.UserList>
-            </>
+            </div>
           ))}
         </Styled.ChannlList>
       </Styled.Container>

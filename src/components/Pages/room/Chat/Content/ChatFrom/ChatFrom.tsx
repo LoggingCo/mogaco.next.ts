@@ -1,4 +1,4 @@
-import { parseLevel } from 'libs/utils/parseLevel';
+import { parseLevel } from '@libs/utils/parseLevel';
 import * as Styled from './Style';
 import dayjs from 'dayjs';
 

@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { useCalendar } from 'hooks/Page/my-plan/useCalendar';
+import { useCalendar } from '@hooks/Page/my-plan/useCalendar';
 import { useState } from 'react';
 import * as Styled from './Style';
 import MyPlanMemoModal from '../Modal/Memo';

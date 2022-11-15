@@ -1,4 +1,4 @@
-import { parseLevel } from 'libs/utils/parseLevel';
+import { parseLevel } from '@libs/utils/parseLevel';
 import * as Styled from './Style';
 
 function MyPlanSideInfo({ info }: any) {
@@ -13,8 +13,8 @@ function MyPlanSideInfo({ info }: any) {
       </Styled.Header>
       <Styled.Content>
         <ul>
-          {Object.keys(info.time).map((key) => (
-            <li key={key}>
+          {Object.keys(info.time).map((key, index) => (
+            <li key={index}>
               <p>{key}</p>
               <p>{info.time[key]}</p>
             </li>

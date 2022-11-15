@@ -24,9 +24,10 @@
       "@hooks/*": ["hooks/*"],
       "@atom/*": ["atom/*"],
       "@types/*": ["types/*"],
-      "@mocks/*": ["__mock__/*"]
+      "@mocks/*": ["__mock__/*"],
+      "@libs/*": ["libs/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "jest.setup.js", "jest.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/jest.setup.jsp.js", "jest.config.ts"],
   "exclude": ["node_modules"]
 }

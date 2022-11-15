@@ -1,5 +1,5 @@
 import { roomChat } from '@mocks/data/room.data';
-import { useChatList } from 'hooks/Page/room/useChatList';
+import { useChatList } from '@hooks/Page/room/useChatList';
 import { useEffect, useRef, useState } from 'react';
 import RoomChatFrom from './ChatFrom/ChatFrom';
 import RoomChatTo from './ChatTo/ChatTo';
@@ -17,6 +17,7 @@ function RoomContent() {
 
   // new chat scroll
   useEffect(() => {
+    if (process.env.NODE_ENV === 'test') return;
     if (!scrollState) lastchatRef.current?.scrollIntoView();
   }, [chatList]);
 

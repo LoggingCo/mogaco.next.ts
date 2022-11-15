@@ -16,8 +16,8 @@ function DirectMessageUserList() {
   return (
     <Styled.Wrapper>
       <ul>
-        {userList.map((user) => (
-          <DirectMessageUser key={user.name} user={user} limit={textLimit} />
+        {userList.map((user, index) => (
+          <DirectMessageUser key={index} user={user} limit={textLimit} />
         ))}
       </ul>
     </Styled.Wrapper>

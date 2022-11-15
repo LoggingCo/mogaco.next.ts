@@ -1,10 +1,10 @@
-import Layout from 'components/Layout/Layout';
-import DirectMessageChat from 'components/Pages/direct-message/Chat/Chat';
-import DirectMessageUserList from 'components/Pages/direct-message/UserList/UserList';
+import Layout from '@components/Layout/Layout';
+import DirectMessageChat from '@components/Pages/direct-message/Chat/Chat';
+import DirectMessageUserList from '@components/Pages/direct-message/UserList/UserList';
 import { ReactElement } from 'react';
 import styled from 'styled-components';
-import { flexCenter } from '@/libs/styles/common';
-import { withAuth } from '@/libs/utils/hoc';
+import { flexCenter } from '@libs/styles/common';
+import { withAuth } from '@libs/utils/hoc';
 
 function DirectMessagePage() {
   return (

@@ -1,5 +1,5 @@
 import useChatParse from '@/hooks/Page/direct-message/useChatParse';
-import { parseLevel } from '@/libs/utils/parseLevel';
+import { parseLevel } from '@libs/utils/parseLevel';
 import * as Styled from './Style';
 
 function DirectMessageUser({ user, limit }: any) {

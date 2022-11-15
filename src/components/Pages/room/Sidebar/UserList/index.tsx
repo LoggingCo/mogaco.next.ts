@@ -1,5 +1,4 @@
-import { parseLevel } from 'libs/utils/parseLevel';
-import { parse } from 'path';
+import { parseLevel } from '@libs/utils/parseLevel';
 import * as Styled from './Style';
 function RoomSidebarUserList({ userList, master }: any) {
   return (
@@ -9,8 +8,8 @@ function RoomSidebarUserList({ userList, master }: any) {
       </Styled.Header>
       <Styled.Container>
         <ul>
-          {userList.map((user: any) => (
-            <Styled.Item>
+          {userList.map((user: any, index: number) => (
+            <Styled.Item key={index}>
               <div>
                 <span>{parseLevel(user.level)}</span>
                 {user.name}
