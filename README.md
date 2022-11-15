@@ -16,15 +16,15 @@ TEST PW : 'test'
 
 #### 2. 온프레미스 docker 셋팅 api 서버 및 소켓 서버 준비 (o)
 
-#### 3. mock data, msw를 활용 api 목킹, hoc (...ing)
+#### 3. mock data, msw를 활용 api 목킹, hoc (o)
 
-#### 4. storybook 적용 및 msw, storybook 연동
+#### 4. storybook 적용 및 msw, storybook 연동 (...ing)
 
-#### 5. 유닛 테스트 단위 페이지 랜더링 확인 및 유틸 함수 test code 작성
+#### 5. 유닛 테스트 단위 페이지 랜더링 확인 및 유틸 함수 test code 작성 (...ing)
 
 #### 6. api목킹을 활용한 통합테스트 TDD testcode 작성
 
-#### 7. focs 해결, varcel 유료계정, mock API기반 CI 준비
+#### 7. focs 해결, varcel 유료계정, 도메인 구매, https , mock API기반 CI 준비
 
 #### 8. Circle CI를 통한 CI 적용
 
