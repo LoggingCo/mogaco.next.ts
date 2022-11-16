@@ -7,6 +7,7 @@ export const userLogin = rest.post('/api/user/login', async (req, res, ctx) => {
   let password;
 
   await req.json().then((data) => {
+    console.log(data);
     email = data.email;
     password = data.password;
   });

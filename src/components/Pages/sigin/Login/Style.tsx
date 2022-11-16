@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { flexCenter } from '@/libs/styles/common';
 
+interface LoginStlyeProps {
+  error: boolean;
+}
+
 export const Wrapper = styled.div`
   ${flexCenter}
   height: calc(100vh - 48px);
@@ -56,5 +60,37 @@ export const Link = styled.div`
     cursor: pointer;
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: 20px;
+  }
+`;
+
+export const Error = styled.p<LoginStlyeProps>`
+  color: ${({ theme }) => theme.palette.error};
+  font-size: 12px;
+  text-align: center;
+  margin: 4px;
+  visibility: ${({ error }) => (error ? 'visible' : 'hidden')};
+`;
+
+export const Find = styled.div`
+  margin: 4px 0 12px 0;
+  display: flex;
+  justify-content: flex-end;
+  font-size: ${({ theme }) => theme.fontSize.small};
+
+  & span {
+    color: #999;
+    cursor: pointer;
+
+    ::after {
+      content: '|';
+      margin: 8px;
+    }
+
+    :last-child {
+      ::after {
+        content: '';
+        margin: 0;
+      }
+    }
   }
 `;

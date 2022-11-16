@@ -11,7 +11,7 @@ import TokenRepository from '@/repository/TokenRepository';
 
 // types
 type baseApiConstructorType = {
-  baseURL: string | undefined;
+  baseURL?: string | undefined;
   tokenActive?: boolean | undefined;
 };
 

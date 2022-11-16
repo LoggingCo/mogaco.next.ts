@@ -12,16 +12,16 @@ class AuthApi implements AuthAptiImpl {
   }
 
   login({ data }: AuthApiParamType): Promise<AxiosResponse<any>> {
-    console.log(data);
-    return this.baseHttp.post('/login', data);
+    console.log(this.baseHttp);
+    return this.baseHttp.post(this.path + '/login', data);
   }
 
   logout(): Promise<AxiosResponse<any>> {
-    return this.tokenHttp.post('/logout');
+    return this.tokenHttp.post(this.path + '/logout');
   }
 
   signup({ data }: AuthApiParamType): Promise<AxiosResponse<any>> {
-    return this.baseHttp.post(this.path, data);
+    return this.baseHttp.post(this.path + '/signup', data);
   }
 
   jwtrefresh({ token }: AuthApiParamType): Promise<AxiosResponse<any>> {

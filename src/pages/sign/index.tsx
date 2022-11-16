@@ -9,6 +9,14 @@ import { withOutAuth } from '@/libs/utils/hoc';
 function SignPage() {
   const [isLogin, setIsLogin] = useState(true);
 
+  const onClickLogin = () => {
+    setIsLogin(true);
+  };
+
+  const onClickSignUp = () => {
+    setIsLogin(false);
+  };
+
   return (
     <Styled.Wraaper>
       <Styled.Logo>
@@ -22,15 +30,15 @@ function SignPage() {
       <Styled.Main>
         <Styled.MainHeader>
           <ul>
-            <li onClick={() => setIsLogin(true)} role="sign-in">
+            <li onClick={onClickLogin} role="sign-in">
               로그인
             </li>
-            <li onClick={() => setIsLogin(false)} role="sign-up">
+            <li onClick={onClickSignUp} role="sign-up">
               회원가입
             </li>
           </ul>
         </Styled.MainHeader>
-        {isLogin ? <SignLogin /> : <SignSignUp />}
+        {isLogin ? <SignLogin onClickSignUp={onClickSignUp} /> : <SignSignUp />}
       </Styled.Main>
     </Styled.Wraaper>
   );

@@ -1,9 +1,10 @@
+import { AuthService } from '@/apis';
 import ApiError from '@/apis/error';
 import useInputs from '@/hooks/Common/useInputs';
 import TokenRepository from '@/repository/TokenRepository';
 import UserRepository from '@/repository/UserRepositroy';
-import axios from 'axios';
 import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
 import * as Styeld from './Style';
 
 interface Form {
@@ -11,31 +12,39 @@ interface Form {
   password: string;
 }
 
-function SignLogin() {
+function SignLogin({ onClickSignUp }: any) {
   const router = useRouter();
   const [{ email, password }, onChangeForm] = useInputs<Form>({
     email: '',
     password: '',
   });
+  const [isError, setIsError] = useState(false);
 
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    axios
-      .post('/api/user/login', { email, password })
-      .then((res) => {
-        if (res.status === 200) {
-          TokenRepository.setToken(res.data.token);
-          UserRepository.setUser({
-            name: res.data.name,
-            level: res.data.level,
-          });
-          router.push('/room-list');
-        }
-      })
-      .catch((err) => {
-        new ApiError(err.response.data.message, err.response);
-      });
+    try {
+      const res = await AuthService.login({ data: { email, password } });
+      if (res.status === 200) {
+        TokenRepository.setToken(res.data.token);
+        UserRepository.setUser({
+          name: res.data.name,
+          level: res.data.level,
+        });
+        router.push('/room-list');
+      }
+    } catch (err: any) {
+      if (err) {
+        setIsError(true);
+        alert('아이디 또는 비밀번호를 확인해주세요');
+      }
+    }
   };
+
+  useEffect(() => {
+    if (isError) {
+      setIsError(false);
+    }
+  }, [email, password]);
 
   return (
     <Styeld.Wrapper>
@@ -53,9 +62,14 @@ function SignLogin() {
           />
           <span>비밀번호</span>
         </Styeld.InputBox>
+        <Styeld.Error error={isError}>아이디 또는 비밀번호를 확인인해주세요</Styeld.Error>
         <button>로그인</button>
+        <Styeld.Find>
+          <span>아이디 찾기</span>
+          <span>비밀번호 찾기</span>
+        </Styeld.Find>
         <Styeld.Link>
-          아직 모가코 회원이 아니닌가요? <span>모가코와 함께하기</span>
+          아직 모가코 회원이 아니닌가요? <span onClick={onClickSignUp}>모가코와 함께하기</span>
         </Styeld.Link>
       </Styeld.Form>
     </Styeld.Wrapper>
