@@ -7,12 +7,15 @@ import RoomListPage from '@/pages/room-list';
 import { RecoilRoot } from 'recoil';
 
 describe('<Home />', () => {
-  it('홈페이지가 렌더링 되고 스냅샷을 비교한다', () => {
-    const { container } = render(
+  const Component = () =>
+    render(
       <ThemeProvider theme={theme}>
         <Home />
       </ThemeProvider>,
     );
+
+  it('홈페이지가 렌더링 되고 스냅샷을 비교한다', () => {
+    const { container } = Component();
     const home = screen.getByText('mogaco');
 
     expect(home).toBeInTheDocument();
@@ -20,11 +23,7 @@ describe('<Home />', () => {
   });
 
   it('go 버튼 클릭 시 room-list 페이지로 이동된다', () => {
-    render(
-      <ThemeProvider theme={theme}>
-        <Home />
-      </ThemeProvider>,
-    );
+    Component();
 
     const $goButton = screen.getByText('go');
     userEvent.click($goButton);

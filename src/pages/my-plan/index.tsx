@@ -3,7 +3,7 @@ import Layout from '@components/Layout/Layout';
 import MyPlanCalendar from '@components/Pages/my-plan/Calendar/Calendar';
 import MyPlanSidebar from '@components/Pages/my-plan/Sidebar/Sidebar';
 import dayjs, { Dayjs } from 'dayjs';
-import { ReactElement, useState } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
 
 dayjs.locale('ko');

@@ -1,6 +1,6 @@
 import { parseLevel } from '@/libs/utils/parseLevel';
 import { parseMonth } from '@/libs/utils/parseMonth';
-import { parseTimer } from '@/libs/utils/parseTimer';
+import { parseTimerHour } from '@/libs/utils/parseTimer';
 
 describe('데이터 파싱', () => {
   it('레벨 파싱', () => {
@@ -14,8 +14,8 @@ describe('데이터 파싱', () => {
   });
 
   it('타이머 파싱', () => {
-    const hour = parseTimer(3600);
-    const min = parseTimer(60);
+    const hour = parseTimerHour(3600);
+    const min = parseTimerHour(60);
 
     expect(hour).toEqual('01:00');
     expect(min).toEqual('00:01');

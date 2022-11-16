@@ -1,5 +1,5 @@
-import { useTimer } from '@hooks/Page/room/useTimer';
-import { parseTimer } from '@libs/utils/parseTimer';
+import { useTimer } from '@/hooks/Common/useTimer';
+import { parseTimerHour } from '@libs/utils/parseTimer';
 import * as Styled from './Stlye';
 
 function RoomTimer() {
@@ -7,7 +7,7 @@ function RoomTimer() {
 
   return (
     <Styled.Timer>
-      <span>{parseTimer(Timer as number)}</span>
+      <span>{parseTimerHour(Timer as number)}</span>
     </Styled.Timer>
   );
 }

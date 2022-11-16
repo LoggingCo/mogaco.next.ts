@@ -60,6 +60,10 @@ export const Link = styled.div`
     cursor: pointer;
     font-weight: ${({ theme }) => theme.fontWeight.bold};
     font-size: 20px;
+
+    :hover {
+      color: ${({ theme }) => theme.palette.primary[300]};
+    }
   }
 `;
 
@@ -67,7 +71,7 @@ export const Error = styled.p<LoginStlyeProps>`
   color: ${({ theme }) => theme.palette.error};
   font-size: 12px;
   text-align: center;
-  margin: 4px;
+  margin: 8px 0 2px 0;
   visibility: ${({ error }) => (error ? 'visible' : 'hidden')};
 `;
 
@@ -81,16 +85,8 @@ export const Find = styled.div`
     color: #999;
     cursor: pointer;
 
-    ::after {
-      content: '|';
-      margin: 8px;
-    }
-
-    :last-child {
-      ::after {
-        content: '';
-        margin: 0;
-      }
+    :hover {
+      color: ${({ theme }) => theme.palette.fontColor};
     }
   }
 `;

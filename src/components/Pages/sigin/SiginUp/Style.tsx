@@ -59,6 +59,7 @@ export const InputBox = styled.div`
 export const accessInputBox = styled.div`
   margin: 16px 0;
   display: flex;
+  position: relative;
   justify-content: space-between;
 
   & input {
@@ -67,11 +68,19 @@ export const accessInputBox = styled.div`
     border: 1px solid #999;
     border-radius: 8px;
     height: 48px;
+    text-align: center;
   }
 
   & button {
     background-color: ${({ theme }) => theme.palette.primary[300]};
     width: 82px;
     color: ${({ theme }) => theme.palette.fontSubColor};
+  }
+
+  & span {
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    right: 108px;
   }
 `;

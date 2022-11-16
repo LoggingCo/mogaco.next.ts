@@ -1,194 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home /> 로그인/회원가입 페이지가 렌더링 되고 스냅샷을 비교한다 1`] = `
-<div>
-  <div
-    class="sc-kDvujY cwVVHS"
-  >
-    <div
-      class="sc-ipEyDJ hflXJS"
-    >
-      <div
-        class="sc-dkrFOg jcNiDM"
-      >
-        <a
-          href="/"
-        >
-          mogaco
-        </a>
-      </div>
-      <div
-        class="sc-eDWCr cGxhHB"
-      >
-        오늘도
-        <br />
-        모가코,
-      </div>
-    </div>
-    <div
-      class="sc-bqWxrE iEntZY"
-    >
-      <div
-        class="sc-ksBlkl RdDIT"
-      >
-        <ul>
-          <li
-            role="sign-in"
-          >
-            로그인
-          </li>
-          <li
-            role="sign-up"
-          >
-            회원가입
-          </li>
-        </ul>
-      </div>
-      <div
-        class="sc-hLBbgP FbSkc"
-      >
-        <form
-          class="sc-eDvSVe juBFCv"
-        >
-          <div
-            class="sc-jSUZER jhgDYF"
-          >
-            <input
-              name="email"
-              placeholder="이메일 입력하세요"
-            />
-            <span>
-              이메일
-            </span>
-          </div>
-          <div
-            class="sc-jSUZER jhgDYF"
-          >
-            <input
-              name="password"
-              placeholder="비밀번호를 입력하세요"
-              type="password"
-            />
-            <span>
-              비밀번호
-            </span>
-          </div>
-          <button>
-            로그인
-          </button>
-          <div
-            class="sc-gKPRtg eEOnMt"
-          >
-            아직 모가코 회원이 아니닌가요? 
-            <span>
-              모가코와 함께하기
-            </span>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<Home /> 회원가입 버튼 클릭 시 로그인 폼이 아닌 회원 가입이 보여야한다 1`] = `
-<div>
-  <div
-    class="sc-kDvujY cwVVHS"
-  >
-    <div
-      class="sc-ipEyDJ hflXJS"
-    >
-      <div
-        class="sc-dkrFOg jcNiDM"
-      >
-        <a
-          href="/"
-        >
-          mogaco
-        </a>
-      </div>
-      <div
-        class="sc-eDWCr cGxhHB"
-      >
-        오늘도
-        <br />
-        모가코,
-      </div>
-    </div>
-    <div
-      class="sc-bqWxrE iEntZY"
-    >
-      <div
-        class="sc-ksBlkl RdDIT"
-      >
-        <ul>
-          <li
-            role="sign-in"
-          >
-            로그인
-          </li>
-          <li
-            role="sign-up"
-          >
-            회원가입
-          </li>
-        </ul>
-      </div>
-      <div
-        class="sc-hLBbgP FbSkc"
-      >
-        <form
-          class="sc-eDvSVe juBFCv"
-        >
-          <div
-            class="sc-jSUZER jhgDYF"
-          >
-            <input
-              name="email"
-              placeholder="이메일 입력하세요"
-            />
-            <span>
-              이메일
-            </span>
-          </div>
-          <div
-            class="sc-jSUZER jhgDYF"
-          >
-            <input
-              name="password"
-              placeholder="비밀번호를 입력하세요"
-              type="password"
-            />
-            <span>
-              비밀번호
-            </span>
-          </div>
-          <button>
-            로그인
-          </button>
-          <div
-            class="sc-gKPRtg eEOnMt"
-          >
-            아직 모가코 회원이 아니닌가요? 
-            <span>
-              모가코와 함께하기
-            </span>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`<Sign /> 로그인/회원가입 페이지가 렌더링 되고 스냅샷을 비교한다 1`] = `
 <div>
   <div
-    class="sc-kDvujY cwVVHS"
+    class="sc-csuSiG iFMTMp"
   >
     <div
-      class="sc-ipEyDJ hflXJS"
+      class="sc-eDWCr kFjgYm"
     >
       <div
         class="sc-dkrFOg jcNiDM"
@@ -200,7 +18,7 @@ exports[`<Sign /> 로그인/회원가입 페이지가 렌더링 되고 스냅샷
         </a>
       </div>
       <div
-        class="sc-eDWCr cGxhHB"
+        class="sc-ksBlkl kqezNT"
       >
         오늘도
         <br />
@@ -208,10 +26,10 @@ exports[`<Sign /> 로그인/회원가입 페이지가 렌더링 되고 스냅샷
       </div>
     </div>
     <div
-      class="sc-bqWxrE iEntZY"
+      class="sc-hBxehG beVQRr"
     >
       <div
-        class="sc-ksBlkl RdDIT"
+        class="sc-fnGiBr cVZwyc"
       >
         <ul>
           <li
@@ -255,11 +73,23 @@ exports[`<Sign /> 로그인/회원가입 페이지가 렌더링 되고 스냅샷
               비밀번호
             </span>
           </div>
+          <p
+            class="sc-iBYQkv bpzKzW"
+          >
+            아이디 또는 비밀번호를 확인인해주세요
+          </p>
           <button>
             로그인
           </button>
           <div
-            class="sc-gKPRtg eEOnMt"
+            class="sc-ftTHYK hhuBzU"
+          >
+            <span>
+              가입한 이메일로 비밀번호 찾기
+            </span>
+          </div>
+          <div
+            class="sc-gKPRtg dXilA-d"
           >
             아직 모가코 회원이 아니닌가요? 
             <span>

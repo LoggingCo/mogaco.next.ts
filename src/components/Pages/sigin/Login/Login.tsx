@@ -3,6 +3,7 @@ import ApiError from '@/apis/error';
 import useInputs from '@/hooks/Common/useInputs';
 import TokenRepository from '@/repository/TokenRepository';
 import UserRepository from '@/repository/UserRepositroy';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import * as Styeld from './Style';
@@ -65,8 +66,9 @@ function SignLogin({ onClickSignUp }: any) {
         <Styeld.Error error={isError}>아이디 또는 비밀번호를 확인인해주세요</Styeld.Error>
         <button>로그인</button>
         <Styeld.Find>
-          <span>아이디 찾기</span>
-          <span>비밀번호 찾기</span>
+          <Link href="/findPassword">
+            <span>가입한 이메일로 비밀번호 찾기</span>
+          </Link>
         </Styeld.Find>
         <Styeld.Link>
           아직 모가코 회원이 아니닌가요? <span onClick={onClickSignUp}>모가코와 함께하기</span>

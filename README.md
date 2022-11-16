@@ -145,3 +145,5 @@ TEST PW : 'test'
 ```
 
 #### 16. 유닛 test code 작성 완료, msw 통합 테스를 통한 TDD 개발 시작 (11.15)
+
+#### 17. msw mocking api 작성 완료 및 로그인 테스트 구현 (11.16)
