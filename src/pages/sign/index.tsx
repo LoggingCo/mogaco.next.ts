@@ -38,7 +38,11 @@ function SignPage() {
             </li>
           </ul>
         </Styled.MainHeader>
-        {isLogin ? <SignLogin onClickSignUp={onClickSignUp} /> : <SignSignUp />}
+        {isLogin ? (
+          <SignLogin onClickSignUp={onClickSignUp} />
+        ) : (
+          <SignSignUp onClickLogin={onClickLogin} />
+        )}
       </Styled.Main>
     </Styled.Wraaper>
   );

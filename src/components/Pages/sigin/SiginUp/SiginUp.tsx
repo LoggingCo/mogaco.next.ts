@@ -12,7 +12,7 @@ interface Form {
   passwordConfirm: string;
 }
 
-function SignSignUp() {
+function SignSignUp({ onClickLogin }: any) {
   const [{ email, AuthNumber, password, passwordConfirm }, onChangeForm] = useInputs<Form>({
     email: '',
     AuthNumber: '',
@@ -21,7 +21,7 @@ function SignSignUp() {
   });
 
   const [Timer, setTimer, onStopTimer] = useTimer(180, 'minus');
-  const [isEmailAuth, setIsEmailAuth] = useState(true);
+  const [isEmailAuth, setIsEmailAuth] = useState(false);
   const [isAuth, setIsAuth] = useState(false);
   const [isTime, setIsTime] = useState(false);
 
@@ -49,7 +49,7 @@ function SignSignUp() {
   const onSignUp = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (password !== passwordConfirm) {
-      alert('비밀번호가 일치하지 않습니다');
+      alert('비밀번호 확인이 일치하지 않습니다');
       return;
     }
 
@@ -59,7 +59,7 @@ function SignSignUp() {
     }
 
     alert('회원가입이 완료되었습니다');
-    router.push('/sign');
+    onClickLogin();
   };
 
   useEffect(() => {
@@ -73,15 +73,17 @@ function SignSignUp() {
     <Styled.Wrapper>
       <Styled.Form onSubmit={onSignUp}>
         <Styled.InputBox>
-          <input placeholder="이메일을 입력해주세요" name={email} onChange={onChangeForm} />
-          <button type="button" onClick={onSendEmail}>
-            인증
-          </button>
+          <input placeholder="이메일을 입력해주세요" name="email" onChange={onChangeForm} />
+          {!isEmailAuth && (
+            <button type="button" onClick={onSendEmail}>
+              인증
+            </button>
+          )}
           <span>이메일</span>
         </Styled.InputBox>
         {isTime && (
           <Styled.accessInputBox isAuth={isAuth}>
-            <input placeholder="인증번호" name={AuthNumber} onChange={onChangeForm} />
+            <input placeholder="인증번호" name="AuthNumber" onChange={onChangeForm} />
             {!isAuth && <span>{parseTimerMinute(Timer as number)}</span>}
             <button
               type="button"
@@ -93,14 +95,14 @@ function SignSignUp() {
           </Styled.accessInputBox>
         )}
         <Styled.InputBox>
-          <input type="password" placeholder="비밀번호" name={password} onChange={onChangeForm} />
+          <input type="password" placeholder="비밀번호" name="password" onChange={onChangeForm} />
           <span>비밀번호</span>
         </Styled.InputBox>
         <Styled.InputBox>
           <input
             type="password"
             placeholder="비밀번호 확인"
-            name={passwordConfirm}
+            name="passwordConfirm"
             onChange={onChangeForm}
           />
           <span>확인</span>
