@@ -1,8 +1,12 @@
-import styled from 'styled-components';
 import { flexCenter } from '@/libs/styles/common';
+import styled from 'styled-components';
+
+interface SignUpFormProps {
+  isAuth: boolean;
+}
 
 export const Wrapper = styled.div`
-  ${flexCenter}
+  ${flexCenter};
   height: calc(100vh - 48px);
   padding-bottom: 48px;
 `;
@@ -56,7 +60,7 @@ export const InputBox = styled.div`
   }
 `;
 
-export const accessInputBox = styled.div`
+export const accessInputBox = styled.div<SignUpFormProps>`
   margin: 16px 0;
   display: flex;
   position: relative;
@@ -72,9 +76,9 @@ export const accessInputBox = styled.div`
   }
 
   & button {
-    background-color: ${({ theme }) => theme.palette.primary[300]};
+    background-color: ${({ theme, isAuth }) => (isAuth ? '#e9e9e9' : theme.palette.primary[300])};
     width: 82px;
-    color: ${({ theme }) => theme.palette.fontSubColor};
+    color: ${({ theme, isAuth }) => (isAuth ? '#999' : theme.palette.fontSubColor)};
   }
 
   & span {

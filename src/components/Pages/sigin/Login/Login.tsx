@@ -19,6 +19,7 @@ function SignLogin({ onClickSignUp }: any) {
     email: '',
     password: '',
   });
+
   const [isError, setIsError] = useState(false);
 
   const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {

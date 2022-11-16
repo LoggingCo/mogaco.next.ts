@@ -42,6 +42,7 @@ function SignSignUp() {
 
   const onAuthEmail = () => {
     alert('인증되었습니다');
+    onStopTimer();
     setIsAuth(true);
   };
 
@@ -72,27 +73,36 @@ function SignSignUp() {
     <Styled.Wrapper>
       <Styled.Form onSubmit={onSignUp}>
         <Styled.InputBox>
-          <input placeholder="이메일을 입력해주세요" name={email} />
+          <input placeholder="이메일을 입력해주세요" name={email} onChange={onChangeForm} />
           <button type="button" onClick={onSendEmail}>
             인증
           </button>
           <span>이메일</span>
         </Styled.InputBox>
         {isTime && (
-          <Styled.accessInputBox>
-            <input placeholder="인증번호" name={AuthNumber} />
-            <span>{parseTimerMinute(Timer as number)}</span>
-            <button type="button" onClick={isEmailAuth ? onAuthEmail : onReSendEmail}>
+          <Styled.accessInputBox isAuth={isAuth}>
+            <input placeholder="인증번호" name={AuthNumber} onChange={onChangeForm} />
+            {!isAuth && <span>{parseTimerMinute(Timer as number)}</span>}
+            <button
+              type="button"
+              onClick={isEmailAuth ? onAuthEmail : onReSendEmail}
+              disabled={isAuth ? true : false}
+            >
               {isEmailAuth ? '인증하기' : '재전송'}
             </button>
           </Styled.accessInputBox>
         )}
         <Styled.InputBox>
-          <input type="password" placeholder="비밀번호" name={password} />
+          <input type="password" placeholder="비밀번호" name={password} onChange={onChangeForm} />
           <span>비밀번호</span>
         </Styled.InputBox>
         <Styled.InputBox>
-          <input type="password" placeholder="비밀번호 확인" name={passwordConfirm} />
+          <input
+            type="password"
+            placeholder="비밀번호 확인"
+            name={passwordConfirm}
+            onChange={onChangeForm}
+          />
           <span>확인</span>
         </Styled.InputBox>
         <button type="submit">회원가입</button>
