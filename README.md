@@ -40,6 +40,8 @@ TEST PW : 'test'
 
 #### 14. cypress를 활용한 e2e 테스트 작성
 
+#### 15. 센트리를 사용한 프론트엔드 에러 로깅, sitemap.xml과 robots.txt를 활용한 SEO
+
 ## 개발 진행 이슈
 
 #### next v13 (10.29)
