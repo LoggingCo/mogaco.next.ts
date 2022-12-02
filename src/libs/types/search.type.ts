@@ -1,1 +1,1 @@
-export type PoPularCategoryType = String[];
+export type PoPularCategoryType = Array<string>;
