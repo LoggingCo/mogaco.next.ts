@@ -54,7 +54,6 @@ export const DateContainer = styled.div`
   font-size: 0.825rem;
   & > p {
     padding: 0.2rem 1rem;
-    font-weight: ${({ theme }) => theme.fontWeight.bold};
   }
   & > p:first-child {
     background-color: ${({ theme }) => theme.palette.yellow};

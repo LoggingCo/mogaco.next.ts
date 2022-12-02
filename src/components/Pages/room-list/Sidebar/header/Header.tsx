@@ -40,7 +40,6 @@ const Header = styled.header`
   width: 100%;
   background-color: ${({ theme }) => theme.palette.primary[300]};
   color: ${({ theme }) => theme.palette.fontSubColor};
-  font-weight: ${({ theme }) => theme.fontWeight.bold};
   padding: 1rem 2rem;
 
   & > span {

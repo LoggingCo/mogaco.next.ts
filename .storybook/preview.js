@@ -1,7 +1,7 @@
 import * as NextImage from 'next/image';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '@libs/styles/theme';
-import { GlobalStyles } from '@libs/styles/globals';
+import theme from '../src/libs/styles/theme';
+import GlobalStyles from '@libs/styles/globals';
 
 const OriginalNextImage = NextImage.default;
 Object.defineProperty(NextImage, 'default', {
