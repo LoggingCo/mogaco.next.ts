@@ -154,6 +154,8 @@ TEST PW : 'test'
 
 #### 17. msw mocking api 작성 완료 및 로그인 테스트 구현 (11.16)
 
+#### 18. roomlist 폰트 및 style layout 수정 (11.20)
+
 #### 18. TDD 개발 및 통합 테스트 구현 시작 (12.06)
 
 
