@@ -151,5 +151,6 @@ TEST PW : 'test'
 #### 17. msw mocking api 작성 완료 및 로그인 테스트 구현 
 #### 18. roomlist 폰트 및 style layout 수정
 #### 18. TDD 개발 및 통합 테스트 구현 시작 
+#### 19. 시놀로지 나스 백엔드 API 개발 시작
 
 
